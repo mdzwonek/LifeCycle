@@ -69,6 +69,8 @@
              dispatch_async(dispatch_get_main_queue(), ^{
                 [self finishLoginWithUsername:username userFullName:userFullName profileImageURL:profileImageURL];
              });
+         } else {
+             NSLog(@"Failed to log in %@",error);
          }
      }];
 }
