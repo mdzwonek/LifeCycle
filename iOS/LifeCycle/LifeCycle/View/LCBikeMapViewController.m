@@ -10,10 +10,11 @@
 #import "LCBikeMapViewController.h"
 #import "LCBike.h"
 #import "LCDataManager.h"
-#import "LCMapPinAnnotation.h"
+#import "LCBikePinAnnotation.h"
+#import "LCBikeDetailsViewController.h"
 
 
-@interface LCBikeMapViewController () <CLLocationManagerDelegate>
+@interface LCBikeMapViewController () <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (nonatomic) IBOutlet MKMapView *mapView;
 
@@ -42,13 +43,32 @@
     [self loadData];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 - (void)loadData {
     NSMutableArray *annotations = [NSMutableArray new];
     [[[LCDataManager sharedManager] bikes] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         LCBike *bike = (LCBike *)obj;
-        [annotations addObject:[[LCMapPinAnnotation alloc] initWithCoordinates:bike.location.coordinate placeName:nil description:nil]];
+        [annotations addObject:[[LCBikePinAnnotation alloc] initWithBike:bike]];
     }];
     [self.mapView addAnnotations:annotations];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if (![sender isKindOfClass:[LCBike class]]) {
+        return;
+    }
+    
+    LCBikeDetailsViewController *detailsViewController = (LCBikeDetailsViewController *)segue.destinationViewController;
+    detailsViewController.bike = (LCBike *)sender;
 }
 
 
@@ -58,6 +78,37 @@
     if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
         self.mapView.showsUserLocation = YES;
     }
+}
+
+
+#pragma mark - MKMapViewDelegate
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    MKAnnotationView *pinView = nil;
+    if (annotation != mapView.userLocation) {
+        static NSString *identifier = @"bike";
+        
+        pinView = (MKAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (pinView == nil) {
+            pinView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+        }
+        
+        pinView.canShowCallout = NO;
+        pinView.image = [UIImage imageNamed:@"bike"];
+    }
+    return pinView;
+}
+
+- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view {
+    if (![view.annotation isKindOfClass:[LCBikePinAnnotation class]]) {
+        return;
+    }
+    
+    [mapView deselectAnnotation:view.annotation animated:NO];
+    
+    LCBikePinAnnotation *annotation = (LCBikePinAnnotation *)view.annotation;
+    
+    [self performSegueWithIdentifier:@"bike-details-segue" sender:annotation.bike];
 }
 
 @end

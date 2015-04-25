@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Mateusz Dzwonek. All rights reserved.
 //
 
-#import "LCMapPinAnnotation.h"
+#import "LCBikePinAnnotation.h"
 
 
-@interface LCMapPinAnnotation ()
+@interface LCBikePinAnnotation ()
 
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 @property (nonatomic, copy) NSString *title;
@@ -18,14 +18,15 @@
 @end
 
 
-@implementation LCMapPinAnnotation
+@implementation LCBikePinAnnotation
 
-- (instancetype)initWithCoordinates:(CLLocationCoordinate2D)location placeName:(NSString *)placeName description:(NSString *)description {
+- (instancetype)initWithBike:(LCBike *)bike {
     self = [super init];
     if (self) {
-        _coordinate = location;
-        _title = placeName;
-        _subtitle = description;
+        _bike = bike;
+        _coordinate = bike.location.coordinate;
+        _title = nil;
+        _subtitle = nil;
     }
     
     return self;

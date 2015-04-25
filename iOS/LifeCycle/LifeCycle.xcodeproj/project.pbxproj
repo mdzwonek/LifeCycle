@@ -19,7 +19,9 @@
 		48C1D9441AEBC829007006B6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1D9431AEBC829007006B6 /* CoreLocation.framework */; };
 		48C1D9491AEBC89B007006B6 /* LCBikeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9481AEBC89B007006B6 /* LCBikeMapViewController.m */; };
 		48C1D94B1AEBCA0C007006B6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1D94A1AEBCA0C007006B6 /* MapKit.framework */; };
-		48C1D94F1AEBD027007006B6 /* LCMapPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D94E1AEBD027007006B6 /* LCMapPinAnnotation.m */; };
+		48C1D9531AEBD751007006B6 /* bike.png in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9521AEBD751007006B6 /* bike.png */; };
+		48C1D9561AEBDABC007006B6 /* LCBikePinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9551AEBDABC007006B6 /* LCBikePinAnnotation.m */; };
+		48C1D9591AEBDB45007006B6 /* LCBikeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9581AEBDB45007006B6 /* LCBikeDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +57,11 @@
 		48C1D9471AEBC89B007006B6 /* LCBikeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBikeMapViewController.h; path = View/LCBikeMapViewController.h; sourceTree = "<group>"; };
 		48C1D9481AEBC89B007006B6 /* LCBikeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBikeMapViewController.m; path = View/LCBikeMapViewController.m; sourceTree = "<group>"; };
 		48C1D94A1AEBCA0C007006B6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		48C1D94D1AEBD027007006B6 /* LCMapPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCMapPinAnnotation.h; path = View/Utils/LCMapPinAnnotation.h; sourceTree = "<group>"; };
-		48C1D94E1AEBD027007006B6 /* LCMapPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCMapPinAnnotation.m; path = View/Utils/LCMapPinAnnotation.m; sourceTree = "<group>"; };
+		48C1D9521AEBD751007006B6 /* bike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bike.png; path = LifeCycle/Resources/bike.png; sourceTree = "<group>"; };
+		48C1D9541AEBDABC007006B6 /* LCBikePinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBikePinAnnotation.h; path = View/LCBikePinAnnotation.h; sourceTree = "<group>"; };
+		48C1D9551AEBDABC007006B6 /* LCBikePinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBikePinAnnotation.m; path = View/LCBikePinAnnotation.m; sourceTree = "<group>"; };
+		48C1D9571AEBDB45007006B6 /* LCBikeDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBikeDetailsViewController.h; path = View/LCBikeDetailsViewController.h; sourceTree = "<group>"; };
+		48C1D9581AEBDB45007006B6 /* LCBikeDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBikeDetailsViewController.m; path = View/LCBikeDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +110,7 @@
 				48C1D92E1AEBC583007006B6 /* Model */,
 				48C1D9351AEBC66F007006B6 /* Data Layer */,
 				48C1D9461AEBC866007006B6 /* View */,
+				48C1D9501AEBD707007006B6 /* Resources */,
 				48C1D9121AEBC3BC007006B6 /* Main.storyboard */,
 				48C1D9151AEBC3BC007006B6 /* Images.xcassets */,
 				48C1D9171AEBC3BC007006B6 /* LaunchScreen.xib */,
@@ -176,18 +182,21 @@
 			children = (
 				48C1D9471AEBC89B007006B6 /* LCBikeMapViewController.h */,
 				48C1D9481AEBC89B007006B6 /* LCBikeMapViewController.m */,
-				48C1D94C1AEBD007007006B6 /* Utils */,
+				48C1D9541AEBDABC007006B6 /* LCBikePinAnnotation.h */,
+				48C1D9551AEBDABC007006B6 /* LCBikePinAnnotation.m */,
+				48C1D9571AEBDB45007006B6 /* LCBikeDetailsViewController.h */,
+				48C1D9581AEBDB45007006B6 /* LCBikeDetailsViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
 		};
-		48C1D94C1AEBD007007006B6 /* Utils */ = {
+		48C1D9501AEBD707007006B6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				48C1D94D1AEBD027007006B6 /* LCMapPinAnnotation.h */,
-				48C1D94E1AEBD027007006B6 /* LCMapPinAnnotation.m */,
+				48C1D9521AEBD751007006B6 /* bike.png */,
 			);
-			name = Utils;
+			name = Resources;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +281,7 @@
 			files = (
 				48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */,
 				48C1D9191AEBC3BC007006B6 /* LaunchScreen.xib in Resources */,
+				48C1D9531AEBD751007006B6 /* bike.png in Resources */,
 				48C1D9161AEBC3BC007006B6 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,10 +303,11 @@
 				48C1D9491AEBC89B007006B6 /* LCBikeMapViewController.m in Sources */,
 				48C1D93E1AEBC6BB007006B6 /* LCUser.m in Sources */,
 				48C1D93D1AEBC6BB007006B6 /* LCBike.m in Sources */,
-				48C1D94F1AEBD027007006B6 /* LCMapPinAnnotation.m in Sources */,
 				48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */,
 				48C1D90B1AEBC3BC007006B6 /* main.m in Sources */,
+				48C1D9561AEBDABC007006B6 /* LCBikePinAnnotation.m in Sources */,
 				48C1D9411AEBC6CA007006B6 /* LCDataManager.m in Sources */,
+				48C1D9591AEBDB45007006B6 /* LCBikeDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
