@@ -25,9 +25,6 @@ router.post('/add_user', function(req, res) {
     var query = client.query("INSERT INTO \"user\"(id, \"name\", \"login\", \"photourl\")VALUES (DEFAULT, $1, $2, $3) RETURNING *",
         [data.name, data.login, data.photourl]);
 
-    // SQL Query > Select Data
-    // var query = client.query("SELECT * FROM public.user WHERE id = $1", []);
-
     // Stream results back one row at a time
     query.on('row', function(row) {
       results.push(row);
@@ -168,11 +165,8 @@ router.post('/add_bike', function(req, res) {
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Insert Data
-    client.query("INSERT INTO public.bike(id, owner_fk, \"location\") VALUES (DEFAULT, $1, POINT($2, $3))",
+    var query = client.query("INSERT INTO public.bike(id, owner_fk, \"location\", available) VALUES (DEFAULT, $1, POINT($2, $3), true) RETURNING *",
         [data.owner_fk, data.latitude, data.longitude]);
-
-    // SQL Query > Select Data
-    var query = client.query("SELECT * FROM public.bike");
 
     // Stream results back one row at a time
     query.on('row', function(row) {
@@ -201,7 +195,38 @@ router.post('/list_bikes', function(req, res) {
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Select Data
-    var query = client.query("SELECT * FROM public.bike b, public.user u WHERE b.owner_fk = u.id ;");
+    var query = client.query("SELECT b.id, b.owner_fk, b.location, u.name, u.photourl FROM public.bike b, public.user u WHERE b.owner_fk = u.id AND b.available = true;");
+
+    // Stream results back one row at a time
+    query.on('row', function(row) {
+      results.push(row);
+    });
+
+    // After all data is returned, close connection and return results
+    query.on('end', function() {
+      client.end();
+      return res.json(results);
+    });
+
+    // Handle Errors
+    if(err) {
+      console.log(err);
+    }
+  });
+});
+
+router.post('/return_bike', function(req, res) {
+
+  var results = [];
+
+  // Grab data from http request
+  var data = {id: req.body.id, latitude: req.body.latitude, longitude: req.body.longitude};
+
+  // Get a Postgres client from the connection pool
+  pg.connect(connectionString, function(err, client, done) {
+
+    var query = client.query("UPDATE public.bike SET \"location\"=POINT($2, $3), available=true WHERE id=$1 RETURNING *;",
+        [data.id, data.latitude, data.longitude]);
 
     // Stream results back one row at a time
     query.on('row', function(row) {
@@ -222,6 +247,38 @@ router.post('/list_bikes', function(req, res) {
   });
 });
 
+router.post('/book_bike', function(req, res) {
+
+  var results = [];
+
+  // Grab data from http request
+  var data = {id: req.body.id};
+
+  // Get a Postgres client from the connection pool
+  pg.connect(connectionString, function(err, client, done) {
+
+    var query = client.query("UPDATE public.bike SET available=false WHERE id=$1 RETURNING *;",
+        [data.id]);
+
+
+    // Stream results back one row at a time
+    query.on('row', function(row) {
+      results.push(row);
+    });
+
+    // After all data is returned, close connection and return results
+    query.on('end', function() {
+      client.end();
+      return res.json(results);
+    });
+
+    // Handle Errors
+    if(err) {
+      console.log(err);
+    }
+
+  });
+});
 
 router.post('/update_bike_position', function(req, res) {
 
@@ -233,11 +290,9 @@ router.post('/update_bike_position', function(req, res) {
   // Get a Postgres client from the connection pool
   pg.connect(connectionString, function(err, client, done) {
 
-  client.query("UPDATE public.bike SET \"location\"=POINT($2, $3) WHERE id=$1;",
+    var query = client.query("UPDATE public.bike SET \"location\"=POINT($2, $3) WHERE id=$1 RETURNING *;",
         [data.id, data.latitude, data.longitude]);
 
-    // SQL Query > Select Data
-    var query = client.query("SELECT * FROM public.bike");
 
     // Stream results back one row at a time
     query.on('row', function(row) {
