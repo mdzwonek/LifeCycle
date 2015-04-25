@@ -22,11 +22,11 @@ router.post('/add_user', function(req, res) {
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Insert Data
-    client.query("INSERT INTO \"user\"(id, \"name\", \"login\", \"photourl\")VALUES (DEFAULT, $1, $2, $3)",
+    var query = client.query("INSERT INTO \"user\"(id, \"name\", \"login\", \"photourl\")VALUES (DEFAULT, $1, $2, $3) RETURNING *",
         [data.name, data.login, data.photourl]);
 
     // SQL Query > Select Data
-    var query = client.query("SELECT * FROM public.user");
+    // var query = client.query("SELECT * FROM public.user WHERE id = $1", []);
 
     // Stream results back one row at a time
     query.on('row', function(row) {
@@ -233,12 +233,12 @@ router.post('/add_bike', function(req, res) {
   // Get a Postgres client from the connection pool
   pg.connect(connectionString, function(err, client, done) {
 
-    client.query("UPDATE public.user SET text=($1), complete=($2) WHERE id=($3)", [data.text, data.complete, id]);
-    // SQL Query > Insert Data
-    client.query("UPDATE bike
-    SET id=?, owner_fk=?, "location"=? WHERE <condition>;
-    ",
-        [data.owner_fk, data.latitude, data.longitude]);
+    //client.query("UPDATE public.user SET text=($1), complete=($2) WHERE id=($3)", [data.text, data.complete, id]);
+    //// SQL Query > Insert Data
+    //client.query("UPDATE bike
+    //SET id=?, owner_fk=?, "location"=? WHERE <condition>;
+    //",
+    //    [data.owner_fk, data.latitude, data.longitude]);
 
     // SQL Query > Select Data
     var query = client.query("SELECT * FROM public.bike");
