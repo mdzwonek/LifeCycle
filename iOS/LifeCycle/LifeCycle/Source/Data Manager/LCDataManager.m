@@ -13,7 +13,9 @@
 #import "AFNetworking.h"
 
 
-static NSString *const UserFullNameKey = @"userFullName-5";
+static NSString *const UserIdKey = @"userId-1";
+static NSString *const UserFullNameKey = @"userFullName";
+static NSString *const ProfileImageURLKey = @"profileImageURL";
 
 static NSString * const HTTP_METHOD_POST  = @"POST";
 static NSString * const HTTP_CONTENT_TYPE = @"Content-Type";
@@ -22,7 +24,9 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
 
 @interface LCDataManager ()
 
+@property (nonatomic) NSString *userId;
 @property (nonatomic) NSString *userFullName;
+@property (nonatomic) NSString *profileImageURL;
 @property (nonatomic) NSArray *bikes;
 
 - (instancetype)initPrivate;
@@ -44,7 +48,9 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
 - (instancetype)initPrivate {
     self = [super init];
     if (self) {
+        _userId = [[NSUserDefaults standardUserDefaults] stringForKey:UserIdKey];
         _userFullName = [[NSUserDefaults standardUserDefaults] stringForKey:UserFullNameKey];
+        _profileImageURL = [[NSUserDefaults standardUserDefaults] stringForKey:ProfileImageURLKey];
         
         // Mock data
         LCUser *user = [[LCUser alloc] initWithUserName:@"Mateusz Dzwonek" profileImageURL:@"https://graph.facebook.com/mateusz.dzwonek/picture"];
@@ -55,24 +61,31 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
     return self;
 }
 
+- (BOOL)userIsLoggedIn {
+    return _userId != nil && _userFullName != nil;
+}
+
 - (void)loginWithUsername:(NSString *)username fullName:(NSString *)fullName profileImageURL:(NSString *)profileImageURL completion:(void (^)())completion {
-    [self sendRequest:@"add_user" withData:@{ @"name": fullName, @"login": username, @"photourl": profileImageURL } andCompletion:^{
+    [self sendRequest:@"add_user" withData:@{ @"name": fullName, @"login": username, @"photourl": profileImageURL } andCompletion:^(NSError *error, NSArray *response) {
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:response[0][@"id"] forKey:UserIdKey];
         [userDefaults setObject:fullName forKey:UserFullNameKey];
+        [userDefaults setObject:profileImageURL forKey:ProfileImageURLKey];
         [userDefaults synchronize];
         completion();
     }];
 }
 
-- (void)sendRequest:(NSString *)path withData:(NSDictionary *)data andCompletion:(void (^)())completion {
+- (void)sendRequest:(NSString *)path withData:(NSDictionary *)data andCompletion:(void (^)(NSError *error, NSArray *response))completion {
     NSURLRequest *urlRequest = [self prepareRequest:path withData:data];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:urlRequest];
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        completion();
+        NSLog(@"Request finished successfully: %@", responseObject);
+        completion(nil, responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error when making a request: %@", error);
-        completion();
+        completion(error, nil);
     }];
     [[NSOperationQueue mainQueue] addOperation:operation];
 }

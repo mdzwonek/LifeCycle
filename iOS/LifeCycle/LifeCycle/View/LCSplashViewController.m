@@ -15,7 +15,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if ([[LCDataManager sharedManager] userFullName] == nil) {
+    if (![[LCDataManager sharedManager] userIsLoggedIn]) {
         [self performSegueWithIdentifier:@"login-segue" sender:nil];
     } else {
         [self performSegueWithIdentifier:@"splash-bike-map-segue" sender:nil];

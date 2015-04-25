@@ -8,7 +8,10 @@
 
 @interface LCDataManager : NSObject
 
+@property (nonatomic, readonly) NSString *userId;
 @property (nonatomic, readonly) NSString *userFullName;
+@property (nonatomic, readonly) NSString *profileImageURL;
+@property (nonatomic, readonly) BOOL userIsLoggedIn;
 @property (nonatomic, readonly) NSArray *bikes;
 
 + (instancetype)sharedManager;
