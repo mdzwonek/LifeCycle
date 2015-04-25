@@ -1,0 +1,3 @@
+[submodule "iOS/LifeCycle/LifeCycle/Libraries/AFNetworking"]
+	path = iOS/LifeCycle/LifeCycle/Libraries/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking

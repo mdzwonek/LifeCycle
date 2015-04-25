@@ -8,6 +8,16 @@
 
 #import "LCUser.h"
 
+
 @implementation LCUser
+
+- (instancetype)initWithUserName:(NSString *)userName profileImageURL:(NSString *)profileImageURL {
+    self = [super init];
+    if (self) {
+        _userName = userName;
+        _profileImageURL = profileImageURL;
+    }
+    return self;
+}
 
 @end
