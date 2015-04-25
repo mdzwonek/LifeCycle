@@ -12,6 +12,8 @@
 	<dict>
 		<key>36B3BA238502C4EFB081FB5BDA66812949EE5AE8</key>
 		<string>github.com:mdzwonek/LifeCycle.git</string>
+		<key>6CCB585858000804BB16202076224C1AB1B84311</key>
+		<string>https://github.com/Estimote/iOS-SDK</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
 		<string>https://github.com/AFNetworking/AFNetworking</string>
 	</dict>
@@ -21,6 +23,8 @@
 	<dict>
 		<key>36B3BA238502C4EFB081FB5BDA66812949EE5AE8</key>
 		<string>../../../..</string>
+		<key>6CCB585858000804BB16202076224C1AB1B84311</key>
+		<string>../../../../iOS/LifeCycle/LifeCycle/Libraries/iOS-SDK/</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
 		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/AFNetworking</string>
 	</dict>
@@ -39,6 +43,14 @@
 			<string>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AFNetworking</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6CCB585858000804BB16202076224C1AB1B84311</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-SDK</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

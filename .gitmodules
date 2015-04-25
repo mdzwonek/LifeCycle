@@ -1,3 +1,6 @@
 [submodule "iOS/LifeCycle/LifeCycle/Libraries/AFNetworking"]
 	path = iOS/LifeCycle/LifeCycle/Libraries/AFNetworking
 	url = https://github.com/AFNetworking/AFNetworking
+[submodule "iOS/LifeCycle/LifeCycle/Libraries/iOS-SDK"]
+	path = iOS/LifeCycle/LifeCycle/Libraries/iOS-SDK
+	url = https://github.com/Estimote/iOS-SDK

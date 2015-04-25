@@ -13,6 +13,10 @@
 		488708CF1AEC143800AB75A0 /* LCStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708CC1AEC143800AB75A0 /* LCStyling.m */; };
 		488708D01AEC143800AB75A0 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708CE1AEC143800AB75A0 /* NSString+JSON.m */; };
 		488708D31AEC264900AB75A0 /* LCRentalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708D21AEC264900AB75A0 /* LCRentalViewController.m */; };
+		488708D61AEC3E9900AB75A0 /* EstimoteSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488708D51AEC3E9900AB75A0 /* EstimoteSDK.framework */; };
+		488708D81AEC3EB700AB75A0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488708D71AEC3EB700AB75A0 /* CoreBluetooth.framework */; };
+		488708DA1AEC3EC100AB75A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488708D91AEC3EC100AB75A0 /* SystemConfiguration.framework */; };
+		488708E01AEC4B3400AB75A0 /* estimote_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 488708DF1AEC4B3400AB75A0 /* estimote_bg.png */; };
 		48C1D90B1AEBC3BC007006B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90A1AEBC3BC007006B6 /* main.m */; };
 		48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90D1AEBC3BC007006B6 /* AppDelegate.m */; };
 		48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9121AEBC3BC007006B6 /* Main.storyboard */; };
@@ -72,6 +76,10 @@
 		488708CE1AEC143800AB75A0 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
 		488708D11AEC264900AB75A0 /* LCRentalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCRentalViewController.h; path = View/LCRentalViewController.h; sourceTree = "<group>"; };
 		488708D21AEC264900AB75A0 /* LCRentalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCRentalViewController.m; path = View/LCRentalViewController.m; sourceTree = "<group>"; };
+		488708D51AEC3E9900AB75A0 /* EstimoteSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EstimoteSDK.framework; path = "LifeCycle/Libraries/iOS-SDK/EstimoteSDK/EstimoteSDK.framework"; sourceTree = "<group>"; };
+		488708D71AEC3EB700AB75A0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		488708D91AEC3EC100AB75A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		488708DF1AEC4B3400AB75A0 /* estimote_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = estimote_bg.png; path = LifeCycle/Resources/estimote_bg.png; sourceTree = "<group>"; };
 		48C1D9051AEBC3BB007006B6 /* LifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1D9091AEBC3BB007006B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C1D90A1AEBC3BC007006B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,10 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				488708C61AEC0EEB00AB75A0 /* Accounts.framework in Frameworks */,
+				488708D81AEC3EB700AB75A0 /* CoreBluetooth.framework in Frameworks */,
 				48C1D9441AEBC829007006B6 /* CoreLocation.framework in Frameworks */,
+				488708D61AEC3E9900AB75A0 /* EstimoteSDK.framework in Frameworks */,
 				48C1D99F1AEBF979007006B6 /* MediaPlayer.framework in Frameworks */,
 				48C1D94B1AEBCA0C007006B6 /* MapKit.framework in Frameworks */,
 				488708C31AEC0EAF00AB75A0 /* Social.framework in Frameworks */,
+				488708DA1AEC3EC100AB75A0 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +186,14 @@
 			);
 			name = Other;
 			path = Source/Other;
+			sourceTree = "<group>";
+		};
+		488708D41AEC3E7000AB75A0 /* EstimoteSDK */ = {
+			isa = PBXGroup;
+			children = (
+				488708D51AEC3E9900AB75A0 /* EstimoteSDK.framework */,
+			);
+			name = EstimoteSDK;
 			sourceTree = "<group>";
 		};
 		48C1D8FC1AEBC3BB007006B6 = {
@@ -266,10 +285,12 @@
 			isa = PBXGroup;
 			children = (
 				488708C41AEC0ED700AB75A0 /* Accounts.framework */,
+				488708D71AEC3EB700AB75A0 /* CoreBluetooth.framework */,
 				48C1D9431AEBC829007006B6 /* CoreLocation.framework */,
 				48C1D94A1AEBCA0C007006B6 /* MapKit.framework */,
 				48C1D99E1AEBF979007006B6 /* MediaPlayer.framework */,
 				488708C11AEC0E9E00AB75A0 /* Social.framework */,
+				488708D91AEC3EC100AB75A0 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			path = ..;
@@ -298,6 +319,7 @@
 			isa = PBXGroup;
 			children = (
 				48C1D9521AEBD751007006B6 /* bike.png */,
+				488708DF1AEC4B3400AB75A0 /* estimote_bg.png */,
 				48C1D95E1AEBE9F6007006B6 /* person.png */,
 				48C1D9A11AEBFD8E007006B6 /* video.mp4 */,
 			);
@@ -309,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				48C1D9631AEBEF07007006B6 /* AFNetworking */,
+				488708D41AEC3E7000AB75A0 /* EstimoteSDK */,
 			);
 			name = Libraries;
 			path = ..;
@@ -457,6 +480,7 @@
 			files = (
 				48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */,
 				48C1D9A21AEBFD9A007006B6 /* video.mp4 in Resources */,
+				488708E01AEC4B3400AB75A0 /* estimote_bg.png in Resources */,
 				48C1D9191AEBC3BC007006B6 /* LaunchScreen.xib in Resources */,
 				48C1D9531AEBD751007006B6 /* bike.png in Resources */,
 				48C1D9161AEBC3BC007006B6 /* Images.xcassets in Resources */,
@@ -633,6 +657,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LifeCycle/Libraries/iOS-SDK/EstimoteSDK",
+				);
 				GCC_PREFIX_HEADER = LifeCycle/Prefix.pch;
 				INFOPLIST_FILE = LifeCycle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -644,6 +672,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LifeCycle/Libraries/iOS-SDK/EstimoteSDK",
+				);
 				GCC_PREFIX_HEADER = LifeCycle/Prefix.pch;
 				INFOPLIST_FILE = LifeCycle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

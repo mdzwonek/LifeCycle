@@ -13,7 +13,7 @@
 #import "AFNetworking.h"
 
 
-static NSString *const UserIdKey = @"userId-1";
+static NSString *const UserIdKey = @"userId-2";
 static NSString *const UserFullNameKey = @"userFullName";
 static NSString *const ProfileImageURLKey = @"profileImageURL";
 

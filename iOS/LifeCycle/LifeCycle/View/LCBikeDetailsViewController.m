@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Mateusz Dzwonek. All rights reserved.
 //
 
+#import <EstimoteSDK/EstimoteSDK.h>
 #import <MapKit/MapKit.h>
 #import "LCBikeDetailsViewController.h"
 #import "LCUser.h"
@@ -16,12 +17,23 @@
 #import "UIImageView+AFNetworking.h"
 
 
-@interface LCBikeDetailsViewController () <MKMapViewDelegate>
+#define NEARABLES_PROXIMITY_UUID [[NSUUID alloc] initWithUUIDString:@"D0D3FA86-CA76-45EC-9BD9-6AF47DA01465"]
+
+
+static NSString *const NearableIdentifier = @"7da014651bfbbb85";
+
+
+@interface LCBikeDetailsViewController () <ESTNearableManagerDelegate, MKMapViewDelegate>
 
 @property (nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic) IBOutlet UIImageView *profileImageView;
 @property (nonatomic) IBOutlet UILabel *userNameLabel;
+@property (nonatomic) IBOutlet UIView *nearableView;
+@property (nonatomic) IBOutlet NSLayoutConstraint *nearableLeftConstraint;
 @property (nonatomic) IBOutlet UIButton *bookButton;
+
+@property (nonatomic) ESTNearableManager *nearableManager;
+@property (nonatomic) ESTBeaconManager *beaconManager;
 
 @end
 
@@ -45,6 +57,18 @@
     _userNameLabel.text = _bike.owner.userName;
     
     _bookButton.backgroundColor = [[LCStyling mainColor] colorWithAlphaComponent:0.8f];
+    
+    [self initializeEstimoteTracking];
+}
+
+- (void)initializeEstimoteTracking {
+    self.nearableManager = [[ESTNearableManager alloc] init];
+    _nearableManager.delegate = self;
+    [_nearableManager startRangingForIdentifier:NearableIdentifier];
+}
+
+- (void)tearDownEstimoteTracking {
+    [_nearableManager stopMonitoring];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -53,6 +77,25 @@
         rentalViewController.bike = _bike;
     }
     [super prepareForSegue:segue sender:sender];
+}
+
+
+#pragma mark - ESTNearableManagerDelegate
+
+- (void)nearableManager:(ESTNearableManager *)manager didRangeNearable:(ESTNearable *)nearable {
+    if ([nearable.identifier isEqualToString:NearableIdentifier]) {
+        NSLog(@"%ld", (long)nearable.zone);
+        NSArray *constants = @[ @(0.81), @(0.14f), @(0.36f), @(0.6f) ];
+        NSNumber *percentage = constants[nearable.zone];
+        _nearableLeftConstraint.constant = percentage.floatValue * CGRectGetWidth(_nearableView.superview.frame);
+        [UIView animateWithDuration:0.25f animations:^{
+            [_nearableView layoutIfNeeded];
+        }];
+    }
+}
+
+- (void)nearableManager:(ESTNearableManager *)manager rangingFailedWithError:(NSError *)error {
+    NSLog(@"nearableManager: rangingFailedWithError: %@", error);
 }
 
 
