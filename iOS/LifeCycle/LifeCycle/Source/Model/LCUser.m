@@ -1,13 +1,13 @@
 //
-//  AppDelegate.h
+//  LCUser.m
 //  LifeCycle
 //
 //  Created by Mateusz Dzwonek on 25/04/2015.
 //  Copyright (c) 2015 Mateusz Dzwonek. All rights reserved.
 //
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+#import "LCUser.h"
 
-@property (strong, nonatomic) UIWindow *window;
+@implementation LCUser
 
 @end

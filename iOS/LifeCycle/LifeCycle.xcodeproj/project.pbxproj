@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		48C1D90B1AEBC3BC007006B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90A1AEBC3BC007006B6 /* main.m */; };
 		48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90D1AEBC3BC007006B6 /* AppDelegate.m */; };
-		48C1D9111AEBC3BC007006B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9101AEBC3BC007006B6 /* ViewController.m */; };
 		48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9121AEBC3BC007006B6 /* Main.storyboard */; };
 		48C1D9161AEBC3BC007006B6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9151AEBC3BC007006B6 /* Images.xcassets */; };
 		48C1D9191AEBC3BC007006B6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9171AEBC3BC007006B6 /* LaunchScreen.xib */; };
 		48C1D9251AEBC3BC007006B6 /* LifeCycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9241AEBC3BC007006B6 /* LifeCycleTests.m */; };
+		48C1D93D1AEBC6BB007006B6 /* LCBike.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D93A1AEBC6BB007006B6 /* LCBike.m */; };
+		48C1D93E1AEBC6BB007006B6 /* LCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D93C1AEBC6BB007006B6 /* LCUser.m */; };
+		48C1D9411AEBC6CA007006B6 /* LCDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9401AEBC6CA007006B6 /* LCDataManager.m */; };
+		48C1D9441AEBC829007006B6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1D9431AEBC829007006B6 /* CoreLocation.framework */; };
+		48C1D9491AEBC89B007006B6 /* LCBikeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9481AEBC89B007006B6 /* LCBikeMapViewController.m */; };
+		48C1D94B1AEBCA0C007006B6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1D94A1AEBCA0C007006B6 /* MapKit.framework */; };
+		48C1D94F1AEBD027007006B6 /* LCMapPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D94E1AEBD027007006B6 /* LCMapPinAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +38,25 @@
 		48C1D90A1AEBC3BC007006B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48C1D90C1AEBC3BC007006B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		48C1D90D1AEBC3BC007006B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		48C1D90F1AEBC3BC007006B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		48C1D9101AEBC3BC007006B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		48C1D9131AEBC3BC007006B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48C1D9151AEBC3BC007006B6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		48C1D9181AEBC3BC007006B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		48C1D91E1AEBC3BC007006B6 /* LifeCycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeCycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1D9231AEBC3BC007006B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C1D9241AEBC3BC007006B6 /* LifeCycleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LifeCycleTests.m; sourceTree = "<group>"; };
+		48C1D9391AEBC6BB007006B6 /* LCBike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBike.h; path = Source/Model/LCBike.h; sourceTree = "<group>"; };
+		48C1D93A1AEBC6BB007006B6 /* LCBike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBike.m; path = Source/Model/LCBike.m; sourceTree = "<group>"; };
+		48C1D93B1AEBC6BB007006B6 /* LCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCUser.h; path = Source/Model/LCUser.h; sourceTree = "<group>"; };
+		48C1D93C1AEBC6BB007006B6 /* LCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCUser.m; path = Source/Model/LCUser.m; sourceTree = "<group>"; };
+		48C1D93F1AEBC6CA007006B6 /* LCDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCDataManager.h; path = "Source/Data Manager/LCDataManager.h"; sourceTree = "<group>"; };
+		48C1D9401AEBC6CA007006B6 /* LCDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCDataManager.m; path = "Source/Data Manager/LCDataManager.m"; sourceTree = "<group>"; };
+		48C1D9421AEBC71D007006B6 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		48C1D9431AEBC829007006B6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		48C1D9471AEBC89B007006B6 /* LCBikeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBikeMapViewController.h; path = View/LCBikeMapViewController.h; sourceTree = "<group>"; };
+		48C1D9481AEBC89B007006B6 /* LCBikeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBikeMapViewController.m; path = View/LCBikeMapViewController.m; sourceTree = "<group>"; };
+		48C1D94A1AEBCA0C007006B6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		48C1D94D1AEBD027007006B6 /* LCMapPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCMapPinAnnotation.h; path = View/Utils/LCMapPinAnnotation.h; sourceTree = "<group>"; };
+		48C1D94E1AEBD027007006B6 /* LCMapPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCMapPinAnnotation.m; path = View/Utils/LCMapPinAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C1D94B1AEBCA0C007006B6 /* MapKit.framework in Frameworks */,
+				48C1D9441AEBC829007006B6 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,11 +102,13 @@
 			children = (
 				48C1D90C1AEBC3BC007006B6 /* AppDelegate.h */,
 				48C1D90D1AEBC3BC007006B6 /* AppDelegate.m */,
-				48C1D90F1AEBC3BC007006B6 /* ViewController.h */,
-				48C1D9101AEBC3BC007006B6 /* ViewController.m */,
+				48C1D92E1AEBC583007006B6 /* Model */,
+				48C1D9351AEBC66F007006B6 /* Data Layer */,
+				48C1D9461AEBC866007006B6 /* View */,
 				48C1D9121AEBC3BC007006B6 /* Main.storyboard */,
 				48C1D9151AEBC3BC007006B6 /* Images.xcassets */,
 				48C1D9171AEBC3BC007006B6 /* LaunchScreen.xib */,
+				48C1D9451AEBC82E007006B6 /* Frameworks */,
 				48C1D9081AEBC3BB007006B6 /* Supporting Files */,
 			);
 			path = LifeCycle;
@@ -97,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				48C1D9091AEBC3BB007006B6 /* Info.plist */,
+				48C1D9421AEBC71D007006B6 /* Prefix.pch */,
 				48C1D90A1AEBC3BC007006B6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -117,6 +139,55 @@
 				48C1D9231AEBC3BC007006B6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48C1D92E1AEBC583007006B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48C1D93B1AEBC6BB007006B6 /* LCUser.h */,
+				48C1D93C1AEBC6BB007006B6 /* LCUser.m */,
+				48C1D9391AEBC6BB007006B6 /* LCBike.h */,
+				48C1D93A1AEBC6BB007006B6 /* LCBike.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		48C1D9351AEBC66F007006B6 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				48C1D93F1AEBC6CA007006B6 /* LCDataManager.h */,
+				48C1D9401AEBC6CA007006B6 /* LCDataManager.m */,
+			);
+			name = "Data Layer";
+			sourceTree = "<group>";
+		};
+		48C1D9451AEBC82E007006B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48C1D9431AEBC829007006B6 /* CoreLocation.framework */,
+				48C1D94A1AEBCA0C007006B6 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		48C1D9461AEBC866007006B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48C1D9471AEBC89B007006B6 /* LCBikeMapViewController.h */,
+				48C1D9481AEBC89B007006B6 /* LCBikeMapViewController.m */,
+				48C1D94C1AEBD007007006B6 /* Utils */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		48C1D94C1AEBD007007006B6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				48C1D94D1AEBD027007006B6 /* LCMapPinAnnotation.h */,
+				48C1D94E1AEBD027007006B6 /* LCMapPinAnnotation.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48C1D9111AEBC3BC007006B6 /* ViewController.m in Sources */,
+				48C1D9491AEBC89B007006B6 /* LCBikeMapViewController.m in Sources */,
+				48C1D93E1AEBC6BB007006B6 /* LCUser.m in Sources */,
+				48C1D93D1AEBC6BB007006B6 /* LCBike.m in Sources */,
+				48C1D94F1AEBD027007006B6 /* LCMapPinAnnotation.m in Sources */,
 				48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */,
 				48C1D90B1AEBC3BC007006B6 /* main.m in Sources */,
+				48C1D9411AEBC6CA007006B6 /* LCDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = LifeCycle/Prefix.pch;
 				INFOPLIST_FILE = LifeCycle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = LifeCycle/Prefix.pch;
 				INFOPLIST_FILE = LifeCycle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
