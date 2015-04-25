@@ -51,12 +51,6 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
         _userId = [[NSUserDefaults standardUserDefaults] stringForKey:UserIdKey];
         _userFullName = [[NSUserDefaults standardUserDefaults] stringForKey:UserFullNameKey];
         _profileImageURL = [[NSUserDefaults standardUserDefaults] stringForKey:ProfileImageURLKey];
-        
-        // Mock data
-        LCUser *user = [[LCUser alloc] initWithUserName:@"Mateusz Dzwonek" profileImageURL:@"https://graph.facebook.com/mateusz.dzwonek/picture"];
-        _bikes = @[ [[LCBike alloc] initWithLocation:[[CLLocation alloc] initWithLatitude:51.511 longitude:-0.056] owner:user],
-                    [[LCBike alloc] initWithLocation:[[CLLocation alloc] initWithLatitude:51.505 longitude:-0.057] owner:user],
-                    [[LCBike alloc] initWithLocation:[[CLLocation alloc] initWithLatitude:51.508 longitude:-0.067] owner:user] ];
     }
     return self;
 }
@@ -72,6 +66,21 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
         [userDefaults setObject:fullName forKey:UserFullNameKey];
         [userDefaults setObject:profileImageURL forKey:ProfileImageURLKey];
         [userDefaults synchronize];
+        completion();
+    }];
+}
+
+- (void)updateBikesWithCompletion:(void (^)())completion {
+    [self sendRequest:@"list_bikes" withData:nil andCompletion:^(NSError *error, NSArray *response) {
+        NSMutableArray *bikes = [NSMutableArray new];
+        [response enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            NSDictionary *bikeJson = obj;
+            CLLocation *location = [[CLLocation alloc] initWithLatitude:[bikeJson[@"location"][@"x"] doubleValue] longitude:[bikeJson[@"location"][@"y"] doubleValue]];
+            LCUser *user = [[LCUser alloc] initWithUserName:bikeJson[@"name"] profileImageURL:bikeJson[@"photourl"]];
+            LCBike *bike = [[LCBike alloc] initWithLocation:location owner:user];
+            [bikes addObject:bike];
+        }];
+        self.bikes = bikes;
         completion();
     }];
 }

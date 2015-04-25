@@ -17,5 +17,6 @@
 + (instancetype)sharedManager;
 
 - (void)loginWithUsername:(NSString *)username fullName:(NSString *)fullName profileImageURL:(NSString *)profileImageURL completion:(void (^)())completion;
+- (void)updateBikesWithCompletion:(void (^)())completion;
 
 @end

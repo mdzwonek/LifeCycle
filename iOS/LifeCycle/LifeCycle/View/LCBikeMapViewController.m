@@ -31,24 +31,25 @@ static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.mapView.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(51.508286, -0.059427), MKCoordinateSpanMake(0.025, 0.025));
+    _mapView.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(51.508286, -0.059427), MKCoordinateSpanMake(0.025, 0.025));
     
     self.locationManager = [[CLLocationManager alloc] init];
-    self.locationManager.delegate = self;
+    _locationManager.delegate = self;
     
     CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
     if (status == kCLAuthorizationStatusNotDetermined) {
-        [self.locationManager requestAlwaysAuthorization];
+        [_locationManager requestAlwaysAuthorization];
     } else if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
-        self.mapView.showsUserLocation = YES;
+        _mapView.showsUserLocation = YES;
     }
-    
-    [self loadData];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [[LCDataManager sharedManager] updateBikesWithCompletion:^{
+        [self loadData];
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -62,7 +63,8 @@ static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
         LCBike *bike = (LCBike *)obj;
         [annotations addObject:[[LCBikePinAnnotation alloc] initWithBike:bike]];
     }];
-    [self.mapView addAnnotations:annotations];
+    [_mapView removeAnnotations:_mapView.annotations];
+    [_mapView addAnnotations:annotations];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -77,7 +79,7 @@ static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
     if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
-        self.mapView.showsUserLocation = YES;
+        _mapView.showsUserLocation = YES;
     }
 }
 
