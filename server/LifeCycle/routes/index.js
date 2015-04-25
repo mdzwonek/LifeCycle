@@ -222,4 +222,44 @@ router.get('/list_bikes', function(req, res) {
   });
 });
 
+
+router.post('/add_bike', function(req, res) {
+
+  var results = [];
+
+  // Grab data from http request
+  var data = {owner_fk: req.body.owner_fk, latitude: req.body.latitude, longitude: req.body.longitude};
+
+  // Get a Postgres client from the connection pool
+  pg.connect(connectionString, function(err, client, done) {
+
+    client.query("UPDATE public.user SET text=($1), complete=($2) WHERE id=($3)", [data.text, data.complete, id]);
+    // SQL Query > Insert Data
+    client.query("UPDATE bike
+    SET id=?, owner_fk=?, "location"=? WHERE <condition>;
+    ",
+        [data.owner_fk, data.latitude, data.longitude]);
+
+    // SQL Query > Select Data
+    var query = client.query("SELECT * FROM public.bike");
+
+    // Stream results back one row at a time
+    query.on('row', function(row) {
+      results.push(row);
+    });
+
+    // After all data is returned, close connection and return results
+    query.on('end', function() {
+      client.end();
+      return res.json(results);
+    });
+
+    // Handle Errors
+    if(err) {
+      console.log(err);
+    }
+
+  });
+});
+
 module.exports = router;
