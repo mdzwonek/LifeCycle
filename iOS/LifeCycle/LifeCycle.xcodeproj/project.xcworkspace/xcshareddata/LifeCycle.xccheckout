@@ -22,7 +22,7 @@
 		<key>36B3BA238502C4EFB081FB5BDA66812949EE5AE8</key>
 		<string>../../../..</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
-		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/AFNetworking/</string>
+		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/AFNetworking</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:mdzwonek/LifeCycle.git</string>
