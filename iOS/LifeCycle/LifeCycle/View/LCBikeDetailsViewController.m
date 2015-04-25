@@ -11,6 +11,7 @@
 #import "LCUser.h"
 #import "LCBike.h"
 #import "LCBikePinAnnotation.h"
+#import "LCRentalViewController.h"
 #import "LCStyling.h"
 #import "UIImageView+AFNetworking.h"
 
@@ -44,6 +45,14 @@
     _userNameLabel.text = _bike.owner.userName;
     
     _bookButton.backgroundColor = [[LCStyling mainColor] colorWithAlphaComponent:0.8f];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"rental-segue"]) {
+        LCRentalViewController *rentalViewController = (LCRentalViewController *)segue.destinationViewController;
+        rentalViewController.bike = _bike;
+    }
+    [super prepareForSegue:segue sender:sender];
 }
 
 

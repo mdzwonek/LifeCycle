@@ -12,6 +12,7 @@
 		488708C61AEC0EEB00AB75A0 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488708C41AEC0ED700AB75A0 /* Accounts.framework */; };
 		488708CF1AEC143800AB75A0 /* LCStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708CC1AEC143800AB75A0 /* LCStyling.m */; };
 		488708D01AEC143800AB75A0 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708CE1AEC143800AB75A0 /* NSString+JSON.m */; };
+		488708D31AEC264900AB75A0 /* LCRentalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708D21AEC264900AB75A0 /* LCRentalViewController.m */; };
 		48C1D90B1AEBC3BC007006B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90A1AEBC3BC007006B6 /* main.m */; };
 		48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90D1AEBC3BC007006B6 /* AppDelegate.m */; };
 		48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9121AEBC3BC007006B6 /* Main.storyboard */; };
@@ -69,6 +70,8 @@
 		488708CC1AEC143800AB75A0 /* LCStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCStyling.m; sourceTree = "<group>"; };
 		488708CD1AEC143800AB75A0 /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
 		488708CE1AEC143800AB75A0 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
+		488708D11AEC264900AB75A0 /* LCRentalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCRentalViewController.h; path = View/LCRentalViewController.h; sourceTree = "<group>"; };
+		488708D21AEC264900AB75A0 /* LCRentalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCRentalViewController.m; path = View/LCRentalViewController.m; sourceTree = "<group>"; };
 		48C1D9051AEBC3BB007006B6 /* LifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1D9091AEBC3BB007006B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C1D90A1AEBC3BC007006B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -285,6 +288,8 @@
 				48C1D9551AEBDABC007006B6 /* LCBikePinAnnotation.m */,
 				48C1D9571AEBDB45007006B6 /* LCBikeDetailsViewController.h */,
 				48C1D9581AEBDB45007006B6 /* LCBikeDetailsViewController.m */,
+				488708D11AEC264900AB75A0 /* LCRentalViewController.h */,
+				488708D21AEC264900AB75A0 /* LCRentalViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -478,6 +483,7 @@
 				48C1D97B1AEBEF23007006B6 /* AFNetworkReachabilityManager.m in Sources */,
 				48C1D93E1AEBC6BB007006B6 /* LCUser.m in Sources */,
 				48C1D99D1AEBF7E0007006B6 /* LCLoginViewController.m in Sources */,
+				488708D31AEC264900AB75A0 /* LCRentalViewController.m in Sources */,
 				48C1D9931AEBEF2C007006B6 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				48C1D9971AEBEF2C007006B6 /* UIImageView+AFNetworking.m in Sources */,
 				48C1D97D1AEBEF23007006B6 /* AFURLConnectionOperation.m in Sources */,

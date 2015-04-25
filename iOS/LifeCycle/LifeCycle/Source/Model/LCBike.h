@@ -11,9 +11,10 @@
 
 @interface LCBike : NSObject
 
+@property (nonatomic) NSNumber *bikeID;
 @property (nonatomic) CLLocation *location;
 @property (nonatomic) LCUser *owner;
 
-- (instancetype)initWithLocation:(CLLocation *)location owner:(LCUser *)owner;
+- (instancetype)initWithID:(NSNumber *)bikeID location:(CLLocation *)location owner:(LCUser *)owner;
 
 @end

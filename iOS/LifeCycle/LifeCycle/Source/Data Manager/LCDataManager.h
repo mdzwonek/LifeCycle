@@ -6,6 +6,9 @@
 //  Copyright (c) 2015 Mateusz Dzwonek. All rights reserved.
 //
 
+@class LCBike;
+
+
 @interface LCDataManager : NSObject
 
 @property (nonatomic, readonly) NSString *userId;
@@ -18,5 +21,8 @@
 
 - (void)loginWithUsername:(NSString *)username fullName:(NSString *)fullName profileImageURL:(NSString *)profileImageURL completion:(void (^)())completion;
 - (void)updateBikesWithCompletion:(void (^)())completion;
+
+- (void)rentBike:(LCBike *)bike;
+- (void)returnBike:(LCBike *)bike atLocation:(CLLocation *)location;
 
 @end

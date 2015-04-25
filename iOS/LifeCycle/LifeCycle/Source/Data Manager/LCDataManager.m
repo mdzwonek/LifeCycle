@@ -55,6 +55,9 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
     return self;
 }
 
+
+#pragma mark - User account
+
 - (BOOL)userIsLoggedIn {
     return _userId != nil && _userFullName != nil;
 }
@@ -70,14 +73,18 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
     }];
 }
 
+
+#pragma mark - Bikes list
+
 - (void)updateBikesWithCompletion:(void (^)())completion {
     [self sendRequest:@"list_bikes" withData:nil andCompletion:^(NSError *error, NSArray *response) {
         NSMutableArray *bikes = [NSMutableArray new];
         [response enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             NSDictionary *bikeJson = obj;
+            NSNumber *bikeID = bikeJson[@"id"];
             CLLocation *location = [[CLLocation alloc] initWithLatitude:[bikeJson[@"location"][@"x"] doubleValue] longitude:[bikeJson[@"location"][@"y"] doubleValue]];
             LCUser *user = [[LCUser alloc] initWithUserName:bikeJson[@"name"] profileImageURL:bikeJson[@"photourl"]];
-            LCBike *bike = [[LCBike alloc] initWithLocation:location owner:user];
+            LCBike *bike = [[LCBike alloc] initWithID:bikeID location:location owner:user];
             [bikes addObject:bike];
         }];
         self.bikes = bikes;
@@ -85,16 +92,31 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
     }];
 }
 
+
+#pragma mark - Rental
+
+- (void)rentBike:(LCBike *)bike {
+    [self sendRequest:@"book_bike" withData:@{ @"id": bike.bikeID } andCompletion:NULL];
+}
+
+- (void)returnBike:(LCBike *)bike atLocation:(CLLocation *)location {
+    NSDictionary *data = @{ @"id": bike.bikeID, @"latitude": @(location.coordinate.latitude), @"longitude": @(location.coordinate.longitude) };
+    [self sendRequest:@"return_bike" withData:data andCompletion:NULL];
+}
+
+
+#pragma mark - Private methods
+
 - (void)sendRequest:(NSString *)path withData:(NSDictionary *)data andCompletion:(void (^)(NSError *error, NSArray *response))completion {
     NSURLRequest *urlRequest = [self prepareRequest:path withData:data];
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:urlRequest];
     operation.responseSerializer = [AFJSONResponseSerializer serializer];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"Request finished successfully: %@", responseObject);
-        completion(nil, responseObject);
+        if (completion != NULL) completion(nil, responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error when making a request: %@", error);
-        completion(error, nil);
+        if (completion != NULL) completion(error, nil);
     }];
     [[NSOperationQueue mainQueue] addOperation:operation];
 }

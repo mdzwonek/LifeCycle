@@ -10,9 +10,10 @@
 
 @implementation LCBike
 
-- (instancetype)initWithLocation:(CLLocation *)location owner:(LCUser *)owner {
+- (instancetype)initWithID:(NSNumber *)bikeID location:(CLLocation *)location owner:(LCUser *)owner {
     self = [super init];
     if (self) {
+        _bikeID = bikeID;
         _location = location;
         _owner = owner;
     }
