@@ -12,6 +12,8 @@
 	<dict>
 		<key>36B3BA238502C4EFB081FB5BDA66812949EE5AE8</key>
 		<string>github.com:mdzwonek/LifeCycle.git</string>
+		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
+		<string>https://github.com/AFNetworking/AFNetworking</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>iOS/LifeCycle/LifeCycle.xcodeproj/project.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>36B3BA238502C4EFB081FB5BDA66812949EE5AE8</key>
 		<string>../../../..</string>
+		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
+		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/AFNetworking/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:mdzwonek/LifeCycle.git</string>
@@ -28,6 +32,14 @@
 	<string>36B3BA238502C4EFB081FB5BDA66812949EE5AE8</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AFNetworking</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

@@ -9,6 +9,8 @@
 @interface LCUser : NSObject
 
 @property (nonatomic) NSString *userName;
-@property (nonatomic) UIImage *profileImage;
+@property (nonatomic) NSString *profileImageURL;
+
+- (instancetype)initWithUserName:(NSString *)userName profileImageURL:(NSString *)profileImageURL;
 
 @end

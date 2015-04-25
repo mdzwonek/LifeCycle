@@ -6,10 +6,14 @@
 //  Copyright (c) 2015 Mateusz Dzwonek. All rights reserved.
 //
 
+@class LCUser;
+
+
 @interface LCBike : NSObject
 
 @property (nonatomic) CLLocation *location;
+@property (nonatomic) LCUser *owner;
 
-- (instancetype)initWithLocation:(CLLocation *)location;
+- (instancetype)initWithLocation:(CLLocation *)location owner:(LCUser *)owner;
 
 @end

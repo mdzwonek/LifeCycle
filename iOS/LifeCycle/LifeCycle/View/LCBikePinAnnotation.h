@@ -1,5 +1,5 @@
 //
-//  LCMapPinAnnotation.h
+//  LCBikePinAnnotation.h
 //  LifeCycle
 //
 //  Created by Mateusz Dzwonek on 25/04/2015.

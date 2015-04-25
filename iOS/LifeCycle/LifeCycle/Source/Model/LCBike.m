@@ -10,10 +10,11 @@
 
 @implementation LCBike
 
-- (instancetype)initWithLocation:(CLLocation *)location {
+- (instancetype)initWithLocation:(CLLocation *)location owner:(LCUser *)owner {
     self = [super init];
     if (self) {
         _location = location;
+        _owner = owner;
     }
     return self;
 }

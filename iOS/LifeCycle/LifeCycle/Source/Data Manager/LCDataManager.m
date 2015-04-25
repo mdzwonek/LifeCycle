@@ -7,6 +7,7 @@
 //
 
 #import "LCDataManager.h"
+#import "LCUser.h"
 #import "LCBike.h"
 
 
@@ -33,9 +34,10 @@
 - (instancetype)initPrivate {
     self = [super init];
     if (self) {
-        _bikes = @[ [[LCBike alloc] initWithLocation:[[CLLocation alloc] initWithLatitude:51.511 longitude:-0.056]],
-                    [[LCBike alloc] initWithLocation:[[CLLocation alloc] initWithLatitude:51.505 longitude:-0.057]],
-                    [[LCBike alloc] initWithLocation:[[CLLocation alloc] initWithLatitude:51.508 longitude:-0.067]] ];
+        LCUser *user = [[LCUser alloc] initWithUserName:@"Mateusz Dzwonek" profileImageURL:@"https://graph.facebook.com/mateusz.dzwonek/picture"];
+        _bikes = @[ [[LCBike alloc] initWithLocation:[[CLLocation alloc] initWithLatitude:51.511 longitude:-0.056] owner:user],
+                    [[LCBike alloc] initWithLocation:[[CLLocation alloc] initWithLatitude:51.505 longitude:-0.057] owner:user],
+                    [[LCBike alloc] initWithLocation:[[CLLocation alloc] initWithLatitude:51.508 longitude:-0.067] owner:user] ];
     }
     return self;
 }
