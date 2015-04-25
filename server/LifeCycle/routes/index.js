@@ -47,7 +47,7 @@ router.post('/add_user', function(req, res) {
   });
 });
 
-router.get('/list_users', function(req, res) {
+router.post('/list_users', function(req, res) {
 
   var results = [];
 
@@ -194,7 +194,7 @@ router.post('/add_bike', function(req, res) {
 });
 
 
-router.get('/list_bikes', function(req, res) {
+router.post('/list_bikes', function(req, res) {
   var results = [];
 
   // Get a Postgres client from the connection pool
@@ -223,22 +223,18 @@ router.get('/list_bikes', function(req, res) {
 });
 
 
-router.post('/add_bike', function(req, res) {
+router.post('/update_bike_position', function(req, res) {
 
   var results = [];
 
   // Grab data from http request
-  var data = {owner_fk: req.body.owner_fk, latitude: req.body.latitude, longitude: req.body.longitude};
+  var data = {id: req.body.id, latitude: req.body.latitude, longitude: req.body.longitude};
 
   // Get a Postgres client from the connection pool
   pg.connect(connectionString, function(err, client, done) {
 
-    //client.query("UPDATE public.user SET text=($1), complete=($2) WHERE id=($3)", [data.text, data.complete, id]);
-    //// SQL Query > Insert Data
-    //client.query("UPDATE bike
-    //SET id=?, owner_fk=?, "location"=? WHERE <condition>;
-    //",
-    //    [data.owner_fk, data.latitude, data.longitude]);
+  client.query("UPDATE public.bike SET \"location\"=POINT($2, $3) WHERE id=$1;",
+        [data.id, data.latitude, data.longitude]);
 
     // SQL Query > Select Data
     var query = client.query("SELECT * FROM public.bike");
