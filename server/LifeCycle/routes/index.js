@@ -16,14 +16,14 @@ router.post('/add_user', function(req, res) {
   var results = [];
 
   // Grab data from http request
-  var data = {name: req.body.name, surname: req.body.surname, login: req.body.login, photourl: req.body.photourl};
+  var data = {name: req.body.name, login: req.body.login, photourl: req.body.photourl};
 
   // Get a Postgres client from the connection pool
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Insert Data
-    client.query("INSERT INTO \"user\"(id, \"name\", \"surname\", \"login\", \"photourl\")VALUES (DEFAULT, $1, $2, $3, $4)",
-        [data.name, data.surname, data.login, data.photourl]);
+    client.query("INSERT INTO \"user\"(id, \"name\", \"login\", \"photourl\")VALUES (DEFAULT, $1, $2, $3)",
+        [data.name, data.login, data.photourl]);
 
     // SQL Query > Select Data
     var query = client.query("SELECT * FROM public.user");
@@ -154,5 +154,47 @@ router.delete('/users/:user_id', function(req, res) {
 
 });
 
+
+//// bikes
+
+router.post('/add_bike', function(req, res) {
+
+  var results = [];
+
+  // Grab data from http request
+  var data = {owner_id: req.body.owner_id, latitude: req.body.latitude, longitude: req.body.longitude};
+
+  // Get a Postgres client from the connection pool
+  pg.connect(connectionString, function(err, client, done) {
+
+    var queryToExecute = "INSERT INTO public.bike(id, owner_fk, \"location\") VALUES (DEFAULT, {0}, POINT({1}, {2}))".format(data.owner_id, data.latitude, data.longitude);
+
+    console.log(queryToExecute);
+
+    // SQL Query > Insert Data
+    client.query("INSERT INTO public.bike(id, owner_fk, \"location\") VALUES (DEFAULT, $1, POINT($2, $3))",
+        [data.owner_id, data.latitude, data.longitude]);
+
+    // SQL Query > Select Data
+    var query = client.query("SELECT * FROM public.bike");
+
+    // Stream results back one row at a time
+    query.on('row', function(row) {
+      results.push(row);
+    });
+
+    // After all data is returned, close connection and return results
+    query.on('end', function() {
+      client.end();
+      return res.json(results);
+    });
+
+    // Handle Errors
+    if(err) {
+      console.log(err);
+    }
+
+  });
+});
 
 module.exports = router;
