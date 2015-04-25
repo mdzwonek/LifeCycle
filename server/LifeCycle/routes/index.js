@@ -195,7 +195,7 @@ router.post('/list_bikes', function(req, res) {
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Select Data
-    var query = client.query("SELECT * FROM public.bike b, public.user u WHERE b.owner_fk = u.id AND b.available = true;");
+    var query = client.query("SELECT b.id, b.owner_fk, b.location, u.name, u.photourl FROM public.bike b, public.user u WHERE b.owner_fk = u.id AND b.available = true;");
 
     // Stream results back one row at a time
     query.on('row', function(row) {
