@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.post('/users', function(req, res) {
+router.post('/add_user', function(req, res) {
 
   var results = [];
 
@@ -26,7 +26,7 @@ router.post('/users', function(req, res) {
         [data.name, data.surname, data.login, data.photourl]);
 
     // SQL Query > Select Data
-    var query = client.query("SELECT * FROM user");
+    var query = client.query("SELECT * FROM public.user");
 
     // Stream results back one row at a time
     query.on('row', function(row) {
@@ -47,7 +47,7 @@ router.post('/users', function(req, res) {
   });
 });
 
-router.get('/users', function(req, res) {
+router.get('/list_users', function(req, res) {
 
   var results = [];
 
@@ -55,7 +55,7 @@ router.get('/users', function(req, res) {
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Select Data
-    var query = client.query("SELECT * FROM user;");
+    var query = client.query("SELECT * FROM public.user;");
 
     // Stream results back one row at a time
     query.on('row', function(row) {
@@ -76,6 +76,7 @@ router.get('/users', function(req, res) {
   });
 
 });
+
 
 router.put('/users/:user_id', function(req, res) {
 
@@ -91,10 +92,10 @@ router.put('/users/:user_id', function(req, res) {
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Update Data
-    client.query("UPDATE user SET text=($1), complete=($2) WHERE id=($3)", [data.text, data.complete, id]);
+    client.query("UPDATE public.user SET text=($1), complete=($2) WHERE id=($3)", [data.text, data.complete, id]);
 
     // SQL Query > Select Data
-    var query = client.query("SELECT * FROM user ORDER BY id ASC");
+    var query = client.query("SELECT * FROM public.user ORDER BY id ASC");
 
     // Stream results back one row at a time
     query.on('row', function(row) {
@@ -128,10 +129,10 @@ router.delete('/users/:user_id', function(req, res) {
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Delete Data
-    client.query("DELETE FROM user WHERE id=($1)", [id]);
+    client.query("DELETE FROM public.user WHERE id=($1)", [id]);
 
     // SQL Query > Select Data
-    var query = client.query("SELECT * FROM user ORDER BY id ASC");
+    var query = client.query("SELECT * FROM public.user ORDER BY id ASC");
 
     // Stream results back one row at a time
     query.on('row', function(row) {
