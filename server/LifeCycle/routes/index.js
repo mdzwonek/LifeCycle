@@ -162,18 +162,14 @@ router.post('/add_bike', function(req, res) {
   var results = [];
 
   // Grab data from http request
-  var data = {owner_id: req.body.owner_id, latitude: req.body.latitude, longitude: req.body.longitude};
+  var data = {owner_fk: req.body.owner_fk, latitude: req.body.latitude, longitude: req.body.longitude};
 
   // Get a Postgres client from the connection pool
   pg.connect(connectionString, function(err, client, done) {
 
-    var queryToExecute = "INSERT INTO public.bike(id, owner_fk, \"location\") VALUES (DEFAULT, {0}, POINT({1}, {2}))".format(data.owner_id, data.latitude, data.longitude);
-
-    console.log(queryToExecute);
-
     // SQL Query > Insert Data
     client.query("INSERT INTO public.bike(id, owner_fk, \"location\") VALUES (DEFAULT, $1, POINT($2, $3))",
-        [data.owner_id, data.latitude, data.longitude]);
+        [data.owner_fk, data.latitude, data.longitude]);
 
     // SQL Query > Select Data
     var query = client.query("SELECT * FROM public.bike");
