@@ -1,24 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P15-hc-8LD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nhY-ol-I8U">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
-        <scene sceneID="sfj-uE-HtC">
+        <scene sceneID="JOU-9y-ZJ0">
             <objects>
-                <navigationController id="P15-hc-8LD" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qvL-0A-5EE">
+                <navigationController navigationBarHidden="YES" id="nhY-ol-I8U" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MsN-vf-PiN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="23S-N5-BL5"/>
+                        <segue destination="h6R-kb-EJI" kind="relationship" relationship="rootViewController" id="CoU-Rt-NdI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZnM-eF-eyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qa-3M-lsc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-212" y="432"/>
+            <point key="canvasLocation" x="-1825" y="432"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="b7U-Su-d5D">
+            <objects>
+                <viewController id="h6R-kb-EJI" customClass="LCSplashViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="13U-Zw-rDp"/>
+                        <viewControllerLayoutGuide type="bottom" id="gTh-ja-Q6U"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T0C-3y-iTM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZnV-jd-fy1"/>
+                    <connections>
+                        <segue destination="udp-DQ-Y1T" kind="show" identifier="login-segue" id="w1g-cs-En6"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="splash-bike-map-segue" id="SQm-yc-oxY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdW-BG-81m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1052" y="432"/>
         </scene>
         <!--Bike Map View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -57,6 +82,81 @@
             </objects>
             <point key="canvasLocation" x="555" y="432"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="gbU-rh-cZh">
+            <objects>
+                <viewController id="udp-DQ-Y1T" customClass="LCLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IOj-2Q-14E"/>
+                        <viewControllerLayoutGuide type="bottom" id="dMC-qN-iG6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kam-Ey-i6l">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iY0-oK-ecP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="444"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ib-MJ-tA3">
+                                <rect key="frame" x="0.0" y="344" width="600" height="100"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="M1g-3k-zwf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6Z-qf-1za">
+                                <rect key="frame" x="0.0" y="444" width="600" height="156"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59h-AY-yHq">
+                                        <rect key="frame" x="200" y="58" width="200" height="40"/>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.65490196079999996" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="FOJ-kz-6XV"/>
+                                            <constraint firstAttribute="width" constant="200" id="g8o-fc-uej"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Log in with Facebook">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapLoginButton:" destination="udp-DQ-Y1T" eventType="touchUpInside" id="TKd-fF-tt4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="59h-AY-yHq" secondAttribute="centerX" id="aNO-Ko-RFm"/>
+                                    <constraint firstAttribute="centerY" secondItem="59h-AY-yHq" secondAttribute="centerY" id="eMH-es-gD7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3ib-MJ-tA3" secondAttribute="trailing" id="84c-af-Kmh"/>
+                            <constraint firstAttribute="height" secondItem="iY0-oK-ecP" secondAttribute="height" multiplier="1.35" id="8kt-pL-b3l"/>
+                            <constraint firstItem="iY0-oK-ecP" firstAttribute="leading" secondItem="Kam-Ey-i6l" secondAttribute="leading" id="Oq7-nw-OIb"/>
+                            <constraint firstAttribute="trailing" secondItem="iY0-oK-ecP" secondAttribute="trailing" id="Tdl-fR-pKc"/>
+                            <constraint firstItem="B6Z-qf-1za" firstAttribute="leading" secondItem="Kam-Ey-i6l" secondAttribute="leading" id="Tzw-gf-zzJ"/>
+                            <constraint firstItem="iY0-oK-ecP" firstAttribute="top" secondItem="Kam-Ey-i6l" secondAttribute="top" id="VKU-jx-xVF"/>
+                            <constraint firstItem="3ib-MJ-tA3" firstAttribute="leading" secondItem="Kam-Ey-i6l" secondAttribute="leading" id="dLV-sa-zsj"/>
+                            <constraint firstAttribute="trailing" secondItem="B6Z-qf-1za" secondAttribute="trailing" id="gai-y6-qEa"/>
+                            <constraint firstItem="iY0-oK-ecP" firstAttribute="bottom" secondItem="3ib-MJ-tA3" secondAttribute="bottom" id="ocf-tp-XFG"/>
+                            <constraint firstItem="B6Z-qf-1za" firstAttribute="top" secondItem="3ib-MJ-tA3" secondAttribute="bottom" id="tDq-qV-3sf"/>
+                            <constraint firstItem="dMC-qN-iG6" firstAttribute="top" secondItem="B6Z-qf-1za" secondAttribute="bottom" id="zjK-3E-zLa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gradientView" destination="3ib-MJ-tA3" id="tdY-RD-Rhc"/>
+                        <outlet property="playerContainerView" destination="iY0-oK-ecP" id="Qci-dc-ZgV"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="login-bike-map-segue" id="tbg-hC-rur"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gil-SG-Fo5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-260" y="1015"/>
+        </scene>
         <!--Bike Details View Controller-->
         <scene sceneID="S7t-ok-70b">
             <objects>
@@ -69,10 +169,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="06P-fe-eEf">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="06P-fe-eEf">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFD-Ck-Wc4">
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xFD-Ck-Wc4">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                                         <subviews>
                                             <mapView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fXn-mc-Gg7">
@@ -201,4 +301,7 @@
     <resources>
         <image name="person.png" width="599" height="599"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tbg-hC-rur"/>
+    </inferredMetricsTieBreakers>
 </document>

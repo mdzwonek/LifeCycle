@@ -14,6 +14,9 @@
 #import "LCBikeDetailsViewController.h"
 
 
+static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
+
+
 @interface LCBikeMapViewController () <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (nonatomic) IBOutlet MKMapView *mapView;
@@ -63,12 +66,10 @@
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if (![sender isKindOfClass:[LCBike class]]) {
-        return;
+    if ([segue.identifier isEqualToString:BikeDetailsSegueIdentifier]) {
+        LCBikeDetailsViewController *detailsViewController = (LCBikeDetailsViewController *)segue.destinationViewController;
+        detailsViewController.bike = (LCBike *)sender;
     }
-    
-    LCBikeDetailsViewController *detailsViewController = (LCBikeDetailsViewController *)segue.destinationViewController;
-    detailsViewController.bike = (LCBike *)sender;
 }
 
 
@@ -108,7 +109,7 @@
     
     LCBikePinAnnotation *annotation = (LCBikePinAnnotation *)view.annotation;
     
-    [self performSegueWithIdentifier:@"bike-details-segue" sender:annotation.bike];
+    [self performSegueWithIdentifier:BikeDetailsSegueIdentifier sender:annotation.bike];
 }
 
 @end

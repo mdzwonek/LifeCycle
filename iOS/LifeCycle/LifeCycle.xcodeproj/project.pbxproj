@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		488708C01AEC0C5D00AB75A0 /* LCSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708BF1AEC0C5D00AB75A0 /* LCSplashViewController.m */; };
+		488708C31AEC0EAF00AB75A0 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488708C11AEC0E9E00AB75A0 /* Social.framework */; };
+		488708C61AEC0EEB00AB75A0 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 488708C41AEC0ED700AB75A0 /* Accounts.framework */; };
+		488708CF1AEC143800AB75A0 /* LCStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708CC1AEC143800AB75A0 /* LCStyling.m */; };
+		488708D01AEC143800AB75A0 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708CE1AEC143800AB75A0 /* NSString+JSON.m */; };
 		48C1D90B1AEBC3BC007006B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90A1AEBC3BC007006B6 /* main.m */; };
 		48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90D1AEBC3BC007006B6 /* AppDelegate.m */; };
 		48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9121AEBC3BC007006B6 /* Main.storyboard */; };
@@ -22,7 +27,6 @@
 		48C1D9531AEBD751007006B6 /* bike.png in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9521AEBD751007006B6 /* bike.png */; };
 		48C1D9561AEBDABC007006B6 /* LCBikePinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9551AEBDABC007006B6 /* LCBikePinAnnotation.m */; };
 		48C1D9591AEBDB45007006B6 /* LCBikeDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9581AEBDB45007006B6 /* LCBikeDetailsViewController.m */; };
-		48C1D95D1AEBE249007006B6 /* LCStyling.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D95C1AEBE249007006B6 /* LCStyling.m */; };
 		48C1D95F1AEBE9F6007006B6 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D95E1AEBE9F6007006B6 /* person.png */; };
 		48C1D9781AEBEF23007006B6 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9661AEBEF23007006B6 /* AFHTTPRequestOperation.m */; };
 		48C1D9791AEBEF23007006B6 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9681AEBEF23007006B6 /* AFHTTPRequestOperationManager.m */; };
@@ -41,6 +45,9 @@
 		48C1D9981AEBEF2C007006B6 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D98E1AEBEF2C007006B6 /* UIProgressView+AFNetworking.m */; };
 		48C1D9991AEBEF2C007006B6 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9901AEBEF2C007006B6 /* UIRefreshControl+AFNetworking.m */; };
 		48C1D99A1AEBEF2C007006B6 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D9921AEBEF2C007006B6 /* UIWebView+AFNetworking.m */; };
+		48C1D99D1AEBF7E0007006B6 /* LCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D99C1AEBF7E0007006B6 /* LCLoginViewController.m */; };
+		48C1D99F1AEBF979007006B6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1D99E1AEBF979007006B6 /* MediaPlayer.framework */; };
+		48C1D9A21AEBFD9A007006B6 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9A11AEBFD8E007006B6 /* video.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		488708BE1AEC0C5D00AB75A0 /* LCSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCSplashViewController.h; path = View/LCSplashViewController.h; sourceTree = "<group>"; };
+		488708BF1AEC0C5D00AB75A0 /* LCSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCSplashViewController.m; path = View/LCSplashViewController.m; sourceTree = "<group>"; };
+		488708C11AEC0E9E00AB75A0 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		488708C41AEC0ED700AB75A0 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		488708CB1AEC143800AB75A0 /* LCStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCStyling.h; sourceTree = "<group>"; };
+		488708CC1AEC143800AB75A0 /* LCStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCStyling.m; sourceTree = "<group>"; };
+		488708CD1AEC143800AB75A0 /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSON.h"; sourceTree = "<group>"; };
+		488708CE1AEC143800AB75A0 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSON.m"; sourceTree = "<group>"; };
 		48C1D9051AEBC3BB007006B6 /* LifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1D9091AEBC3BB007006B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C1D90A1AEBC3BC007006B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,8 +96,6 @@
 		48C1D9551AEBDABC007006B6 /* LCBikePinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBikePinAnnotation.m; path = View/LCBikePinAnnotation.m; sourceTree = "<group>"; };
 		48C1D9571AEBDB45007006B6 /* LCBikeDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCBikeDetailsViewController.h; path = View/LCBikeDetailsViewController.h; sourceTree = "<group>"; };
 		48C1D9581AEBDB45007006B6 /* LCBikeDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBikeDetailsViewController.m; path = View/LCBikeDetailsViewController.m; sourceTree = "<group>"; };
-		48C1D95B1AEBE249007006B6 /* LCStyling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCStyling.h; path = Other/LCStyling.h; sourceTree = "<group>"; };
-		48C1D95C1AEBE249007006B6 /* LCStyling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCStyling.m; path = Other/LCStyling.m; sourceTree = "<group>"; };
 		48C1D95E1AEBE9F6007006B6 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = person.png; path = LifeCycle/Resources/person.png; sourceTree = "<group>"; };
 		48C1D9651AEBEF23007006B6 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		48C1D9661AEBEF23007006B6 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
@@ -120,6 +133,10 @@
 		48C1D9901AEBEF2C007006B6 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		48C1D9911AEBEF2C007006B6 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		48C1D9921AEBEF2C007006B6 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		48C1D99B1AEBF7E0007006B6 /* LCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LCLoginViewController.h; path = View/LCLoginViewController.h; sourceTree = "<group>"; };
+		48C1D99C1AEBF7E0007006B6 /* LCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCLoginViewController.m; path = View/LCLoginViewController.m; sourceTree = "<group>"; };
+		48C1D99E1AEBF979007006B6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		48C1D9A11AEBFD8E007006B6 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = LifeCycle/Resources/video.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +144,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48C1D94B1AEBCA0C007006B6 /* MapKit.framework in Frameworks */,
+				488708C61AEC0EEB00AB75A0 /* Accounts.framework in Frameworks */,
 				48C1D9441AEBC829007006B6 /* CoreLocation.framework in Frameworks */,
+				48C1D99F1AEBF979007006B6 /* MediaPlayer.framework in Frameworks */,
+				48C1D94B1AEBCA0C007006B6 /* MapKit.framework in Frameworks */,
+				488708C31AEC0EAF00AB75A0 /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +162,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		488708CA1AEC143800AB75A0 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				488708CB1AEC143800AB75A0 /* LCStyling.h */,
+				488708CC1AEC143800AB75A0 /* LCStyling.m */,
+				488708CD1AEC143800AB75A0 /* NSString+JSON.h */,
+				488708CE1AEC143800AB75A0 /* NSString+JSON.m */,
+			);
+			name = Other;
+			path = Source/Other;
+			sourceTree = "<group>";
+		};
 		48C1D8FC1AEBC3BB007006B6 = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +200,7 @@
 				48C1D92E1AEBC583007006B6 /* Model */,
 				48C1D9351AEBC66F007006B6 /* Data Layer */,
 				48C1D9461AEBC866007006B6 /* View */,
-				48C1D95A1AEBE231007006B6 /* Other */,
+				488708CA1AEC143800AB75A0 /* Other */,
 				48C1D9501AEBD707007006B6 /* Resources */,
 				48C1D9121AEBC3BC007006B6 /* Main.storyboard */,
 				48C1D9151AEBC3BC007006B6 /* Images.xcassets */,
@@ -230,8 +262,11 @@
 		48C1D9451AEBC82E007006B6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				488708C41AEC0ED700AB75A0 /* Accounts.framework */,
 				48C1D9431AEBC829007006B6 /* CoreLocation.framework */,
 				48C1D94A1AEBCA0C007006B6 /* MapKit.framework */,
+				48C1D99E1AEBF979007006B6 /* MediaPlayer.framework */,
+				488708C11AEC0E9E00AB75A0 /* Social.framework */,
 			);
 			name = Frameworks;
 			path = ..;
@@ -240,6 +275,10 @@
 		48C1D9461AEBC866007006B6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				488708BE1AEC0C5D00AB75A0 /* LCSplashViewController.h */,
+				488708BF1AEC0C5D00AB75A0 /* LCSplashViewController.m */,
+				48C1D99B1AEBF7E0007006B6 /* LCLoginViewController.h */,
+				48C1D99C1AEBF7E0007006B6 /* LCLoginViewController.m */,
 				48C1D9471AEBC89B007006B6 /* LCBikeMapViewController.h */,
 				48C1D9481AEBC89B007006B6 /* LCBikeMapViewController.m */,
 				48C1D9541AEBDABC007006B6 /* LCBikePinAnnotation.h */,
@@ -255,18 +294,10 @@
 			children = (
 				48C1D9521AEBD751007006B6 /* bike.png */,
 				48C1D95E1AEBE9F6007006B6 /* person.png */,
+				48C1D9A11AEBFD8E007006B6 /* video.mp4 */,
 			);
 			name = Resources;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		48C1D95A1AEBE231007006B6 /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				48C1D95B1AEBE249007006B6 /* LCStyling.h */,
-				48C1D95C1AEBE249007006B6 /* LCStyling.m */,
-			);
-			name = Other;
 			sourceTree = "<group>";
 		};
 		48C1D9621AEBEEFB007006B6 /* Libraries */ = {
@@ -420,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */,
+				48C1D9A21AEBFD9A007006B6 /* video.mp4 in Resources */,
 				48C1D9191AEBC3BC007006B6 /* LaunchScreen.xib in Resources */,
 				48C1D9531AEBD751007006B6 /* bike.png in Resources */,
 				48C1D9161AEBC3BC007006B6 /* Images.xcassets in Resources */,
@@ -445,6 +477,7 @@
 				48C1D9491AEBC89B007006B6 /* LCBikeMapViewController.m in Sources */,
 				48C1D97B1AEBEF23007006B6 /* AFNetworkReachabilityManager.m in Sources */,
 				48C1D93E1AEBC6BB007006B6 /* LCUser.m in Sources */,
+				48C1D99D1AEBF7E0007006B6 /* LCLoginViewController.m in Sources */,
 				48C1D9931AEBEF2C007006B6 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				48C1D9971AEBEF2C007006B6 /* UIImageView+AFNetworking.m in Sources */,
 				48C1D97D1AEBEF23007006B6 /* AFURLConnectionOperation.m in Sources */,
@@ -455,7 +488,9 @@
 				48C1D9951AEBEF2C007006B6 /* UIAlertView+AFNetworking.m in Sources */,
 				48C1D97E1AEBEF23007006B6 /* AFURLRequestSerialization.m in Sources */,
 				48C1D93D1AEBC6BB007006B6 /* LCBike.m in Sources */,
+				488708C01AEC0C5D00AB75A0 /* LCSplashViewController.m in Sources */,
 				48C1D9801AEBEF23007006B6 /* AFURLSessionManager.m in Sources */,
+				488708CF1AEC143800AB75A0 /* LCStyling.m in Sources */,
 				48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */,
 				48C1D9791AEBEF23007006B6 /* AFHTTPRequestOperationManager.m in Sources */,
 				48C1D9981AEBEF2C007006B6 /* UIProgressView+AFNetworking.m in Sources */,
@@ -463,10 +498,10 @@
 				48C1D9961AEBEF2C007006B6 /* UIButton+AFNetworking.m in Sources */,
 				48C1D97F1AEBEF23007006B6 /* AFURLResponseSerialization.m in Sources */,
 				48C1D9561AEBDABC007006B6 /* LCBikePinAnnotation.m in Sources */,
+				488708D01AEC143800AB75A0 /* NSString+JSON.m in Sources */,
 				48C1D9411AEBC6CA007006B6 /* LCDataManager.m in Sources */,
 				48C1D9991AEBEF2C007006B6 /* UIRefreshControl+AFNetworking.m in Sources */,
 				48C1D9591AEBDB45007006B6 /* LCBikeDetailsViewController.m in Sources */,
-				48C1D95D1AEBE249007006B6 /* LCStyling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +698,7 @@
 				48C1D92A1AEBC3BC007006B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48C1D92B1AEBC3BC007006B6 /* Build configuration list for PBXNativeTarget "LifeCycleTests" */ = {
 			isa = XCConfigurationList;
@@ -671,6 +707,7 @@
 				48C1D92D1AEBC3BC007006B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
