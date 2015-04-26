@@ -16,7 +16,8 @@
 @property (nonatomic) LCUser *owner;
 @property (nonatomic) NSString *nearableIdentifier;
 @property (nonatomic) BOOL rented;
+@property (nonatomic) NSString *code;
 
-- (instancetype)initWithID:(NSNumber *)bikeID location:(CLLocation *)location owner:(LCUser *)owner rented:(BOOL)rented;
+- (instancetype)initWithID:(NSNumber *)bikeID location:(CLLocation *)location owner:(LCUser *)owner rented:(BOOL)rented code:(NSString *)code;
 
 @end

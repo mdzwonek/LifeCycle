@@ -195,7 +195,7 @@ router.post('/list_bikes', function(req, res) {
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Select Data
-    var query = client.query("SELECT b.id, b.owner_fk, b.location, b.available, u.name, u.photourl " +
+    var query = client.query("SELECT b.id, b.owner_fk, b.location, b.available, b.code, u.name, u.photourl " +
     "FROM public.bike b, public.user u " +
     "WHERE b.owner_fk = u.id ORDER BY b.id ASC;");
 

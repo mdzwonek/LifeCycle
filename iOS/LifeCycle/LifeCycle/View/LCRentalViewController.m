@@ -14,6 +14,7 @@
 @interface LCRentalViewController () <CLLocationManagerDelegate>
 
 @property (nonatomic) IBOutlet UILabel *timerLabel;
+@property (nonatomic) IBOutlet UILabel *codeLabel;
 
 @property (nonatomic) NSDate *startDate;
 @property (nonatomic) NSTimer *timer;
@@ -31,6 +32,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    _codeLabel.text = _bike.code;
     
     self.startDate = [NSDate new];
     
