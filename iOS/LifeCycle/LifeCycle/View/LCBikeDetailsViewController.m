@@ -17,12 +17,6 @@
 #import "UIImageView+AFNetworking.h"
 
 
-#define NEARABLES_PROXIMITY_UUID [[NSUUID alloc] initWithUUIDString:@"D0D3FA86-CA76-45EC-9BD9-6AF47DA01465"]
-
-
-static NSString *const NearableIdentifier = @"7da014651bfbbb85";
-
-
 @interface LCBikeDetailsViewController () <ESTNearableManagerDelegate, MKMapViewDelegate>
 
 @property (nonatomic) IBOutlet MKMapView *mapView;
@@ -44,7 +38,6 @@ static NSString *const NearableIdentifier = @"7da014651bfbbb85";
     [super viewDidLoad];
     
     _mapView.region = MKCoordinateRegionMake(_bike.location.coordinate, MKCoordinateSpanMake(0.01, 0.01));
-    [_mapView addAnnotation:[[LCBikePinAnnotation alloc] initWithBike:_bike]];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [_mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:YES];
     });
@@ -61,10 +54,16 @@ static NSString *const NearableIdentifier = @"7da014651bfbbb85";
     [self initializeEstimoteTracking];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [_mapView removeAnnotations:_mapView.annotations];
+    [_mapView addAnnotation:[[LCBikePinAnnotation alloc] initWithBike:_bike]];
+}
+
 - (void)initializeEstimoteTracking {
     self.nearableManager = [[ESTNearableManager alloc] init];
     _nearableManager.delegate = self;
-    [_nearableManager startRangingForIdentifier:NearableIdentifier];
+    [_nearableManager startRangingForIdentifier:_bike.nearableIdentifier];
 }
 
 - (void)tearDownEstimoteTracking {
@@ -83,7 +82,7 @@ static NSString *const NearableIdentifier = @"7da014651bfbbb85";
 #pragma mark - ESTNearableManagerDelegate
 
 - (void)nearableManager:(ESTNearableManager *)manager didRangeNearable:(ESTNearable *)nearable {
-    if ([nearable.identifier isEqualToString:NearableIdentifier]) {
+    if ([nearable.identifier isEqualToString:_bike.nearableIdentifier]) {
         NSLog(@"%ld", (long)nearable.zone);
         NSArray *constants = @[ @(0.81), @(0.14f), @(0.36f), @(0.6f) ];
         NSNumber *percentage = constants[nearable.zone];
