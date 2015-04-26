@@ -7,37 +7,33 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5AE73302-30A3-4532-92EA-ED61693FE061</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>LifeCycle</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>36B3BA238502C4EFB081FB5BDA66812949EE5AE8</key>
-		<string>github.com:mdzwonek/LifeCycle.git</string>
+		<string>https://github.com/mdzwonek/LifeCycle.git</string>
 		<key>6CCB585858000804BB16202076224C1AB1B84311</key>
 		<string>https://github.com/Estimote/iOS-SDK</string>
-		<key>9C4A841DA97D0BF917E7F2BF25C9D878A3AA1FF8</key>
-		<string>https://github.com/michaelhenry/MHFacebookImageViewer</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
 		<string>https://github.com/AFNetworking/AFNetworking</string>
 		<key>DEF69B637476FC5A11C1E68BB97C88EC6D295A4E</key>
 		<string>https://github.com/paypal/PayPal-iOS-SDK.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS/LifeCycle/LifeCycle.xcodeproj/project.xcworkspace</string>
+	<string>iOS/LifeCycle/LifeCycle.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>36B3BA238502C4EFB081FB5BDA66812949EE5AE8</key>
 		<string>../../../..</string>
 		<key>6CCB585858000804BB16202076224C1AB1B84311</key>
-		<string>../../../../iOS/LifeCycle/LifeCycle/Libraries/iOS-SDK/</string>
-		<key>9C4A841DA97D0BF917E7F2BF25C9D878A3AA1FF8</key>
-		<string>../../../../iOS/LifeCycle/LifeCycle/Libraries/MHFacebookImageViewer/</string>
+		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/iOS-SDK/</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
-		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/AFNetworking</string>
+		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/AFNetworking/</string>
 		<key>DEF69B637476FC5A11C1E68BB97C88EC6D295A4E</key>
-		<string>../../../../iOS/LifeCycle/LifeCycle/Libraries/PayPal-iOS-SDK/</string>
+		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/PayPal-iOS-SDK/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:mdzwonek/LifeCycle.git</string>
+	<string>https://github.com/mdzwonek/LifeCycle.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -67,14 +63,6 @@
 			<string>36B3BA238502C4EFB081FB5BDA66812949EE5AE8</string>
 			<key>IDESourceControlWCCName</key>
 			<string>LifeCycle</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9C4A841DA97D0BF917E7F2BF25C9D878A3AA1FF8</string>
-			<key>IDESourceControlWCCName</key>
-			<string>MHFacebookImageViewer</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

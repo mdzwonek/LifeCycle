@@ -527,8 +527,13 @@
                                     <action selector="didTapBikesButton:" destination="cXe-0X-M29" eventType="touchUpInside" id="4Bs-BM-v70"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOd-XH-N88">
+                                <rect key="frame" x="0.0" y="40" width="600" height="101"/>
+=======
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOd-XH-N88">
                                 <rect key="frame" x="0.0" y="84" width="600" height="101"/>
+>>>>>>> 81d4f6af065f2d7a2f72bc69f36e9c8734304f62
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4E-iK-zBV">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
@@ -574,8 +579,13 @@
                                     <constraint firstAttribute="trailing" secondItem="hVV-id-Mq0" secondAttribute="trailing" id="vfz-jo-pRn"/>
                                 </constraints>
                             </view>
+<<<<<<< HEAD
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ocX-aR-SBl">
+                                <rect key="frame" x="0.0" y="161" width="600" height="154"/>
+=======
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocX-aR-SBl">
                                 <rect key="frame" x="0.0" y="205" width="600" height="154"/>
+>>>>>>> 81d4f6af065f2d7a2f72bc69f36e9c8734304f62
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2eG-3Y-Xf7">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
@@ -927,6 +937,6 @@
         <image name="sticker_bike" width="170" height="115"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tbg-hC-rur"/>
+        <segue reference="SQm-yc-oxY"/>
     </inferredMetricsTieBreakers>
 </document>
