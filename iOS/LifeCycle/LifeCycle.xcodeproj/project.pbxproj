@@ -118,6 +118,7 @@
 		488708EB1AEC695700AB75A0 /* LCBikeLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCBikeLocationViewController.m; path = View/LCBikeLocationViewController.m; sourceTree = "<group>"; };
 		488708ED1AEC7D7600AB75A0 /* star_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_empty.png; path = LifeCycle/Resources/star_empty.png; sourceTree = "<group>"; };
 		488708EE1AEC7D7600AB75A0 /* star_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_full.png; path = LifeCycle/Resources/star_full.png; sourceTree = "<group>"; };
+		488708F51AEC92A100AB75A0 /* QuirkyLondon.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = QuirkyLondon.gpx; path = LifeCycle.xcodeproj/../LifeCycle/Resources/QuirkyLondon.gpx; sourceTree = "<group>"; };
 		48C1D9051AEBC3BB007006B6 /* LifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1D9091AEBC3BB007006B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C1D90A1AEBC3BC007006B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -414,6 +415,7 @@
 				488708E61AEC68BC00AB75A0 /* btn_map.png */,
 				488708E71AEC68BC00AB75A0 /* btn_map@2x.png */,
 				488708DF1AEC4B3400AB75A0 /* estimote_bg.png */,
+				488708F51AEC92A100AB75A0 /* QuirkyLondon.gpx */,
 				488708ED1AEC7D7600AB75A0 /* star_empty.png */,
 				488708EE1AEC7D7600AB75A0 /* star_full.png */,
 				48C1D95E1AEBE9F6007006B6 /* person.png */,

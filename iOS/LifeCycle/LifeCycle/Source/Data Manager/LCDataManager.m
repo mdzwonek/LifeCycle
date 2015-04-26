@@ -95,7 +95,7 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
 }
 
 
-#pragma mark - Rental
+#pragma mark - Bikes
 
 - (void)rentBike:(LCBike *)bike {
     [self sendRequest:@"book_bike" withData:@{ @"id": bike.bikeID } andCompletion:NULL];
@@ -104,6 +104,11 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
 - (void)returnBike:(LCBike *)bike atLocation:(CLLocation *)location {
     NSDictionary *data = @{ @"id": bike.bikeID, @"latitude": @(location.coordinate.latitude), @"longitude": @(location.coordinate.longitude) };
     [self sendRequest:@"return_bike" withData:data andCompletion:NULL];
+}
+
+- (void)updateLocation:(CLLocation *)location ofBike:(LCBike *)bike {
+    NSDictionary *data = @{ @"id": bike.bikeID, @"latitude": @(location.coordinate.latitude), @"longitude": @(location.coordinate.longitude) };
+    [self sendRequest:@"update_bike_position" withData:data andCompletion:NULL];
 }
 
 
