@@ -257,47 +257,6 @@ router.post('/return_bike', function(req, res) {
       results.push(row);
     });
 
-    var config_opts = {
-      'host': 'api.sandbox.paypal.com',
-      'port': '',
-      'client_id': 'Afp2yAdLXxHG6EYv1TDHaH9jsA7X-L2y3k5tblbXFvFM0evlPcxssqpVj8XJUaCJxbQDjcN7MG_J4wT-',
-      'client_secret': 'EAZr787qN6AX0GfqR8lpkFh7-YwTR4c37q_-nLeQ0il9rjdMN4uw1mZtdtiZ25oQ3izvhLep42jObd33'
-    };
-
-
-    var create_payment_json = {
-      "intent": "sale",
-      "payer": {
-        "payment_method": "paypal"
-      },
-      "redirect_urls": {
-        "return_url": "http:\/\/localhost\/test\/rest\/rest-api-sdk-php\/sample\/payments\/ExecutePayment.php?success=true",
-        "cancel_url": "http:\/\/localhost\/test\/rest\/rest-api-sdk-php\/sample\/payments\/ExecutePayment.php?success=false"
-      },
-      "transactions": [{
-        "amount": {
-          "currency": "USD",
-          "total": "1.00"
-        },
-        "description": "This is the payment descriptionx."
-      }]
-    };
-
-
-    paypal_api.payment.create(create_payment_json, config_opts, function (err, res) {
-      if (err) {
-        throw err;
-      }
-
-      if (res) {
-        console.log("Create Payment Response");
-        console.log(res);
-      }
-
-//      paypal_api.payment.
-    });
-
-
     // After all data is returned, close connection and return results
     query.on('end', function() {
       client.end();
@@ -325,11 +284,11 @@ router.post('/book_bike', function(req, res) {
     var query = client.query("UPDATE public.bike SET available=false WHERE id=$1 RETURNING *;",
         [data.id]);
 
-
     // Stream results back one row at a time
     query.on('row', function(row) {
       results.push(row);
     });
+
 
     // After all data is returned, close connection and return results
     query.on('end', function() {
@@ -343,6 +302,48 @@ router.post('/book_bike', function(req, res) {
     }
 
   });
+
+  // Get a Postgres client from the connection pool
+  //pg.connect(connectionString, function(err, client, done) {
+  //
+  //  // TODO
+  //  var query = client.query("SELECT FROM public.user SET available=false WHERE id=$1 RETURNING *;",
+  //      [data.id]);
+  //
+  //  // Stream results back one row at a time
+  //  query.on('row', function(row) {
+  //    results.push(row);
+  //  });
+  //
+  //
+  //  var apn = require('apn');
+  //
+  //  var apnConnection = new apn.Connection({});
+  //
+  //  var myDevice = new apn.Device("0b33d559 7ddadf54 d359462c 6ad7e8fa 4afd3e52 decafdf4 ca9aa9fb 73ddbea8");
+  //
+  //  var note = new apn.Notification();
+  //  note.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
+  //  note.sound = "ping.aiff";
+  //  note.alert = "Hello world!";
+  //
+  //  apnConnection.pushNotification(note, myDevice);
+  //
+  //  module.exports = app;
+  //
+  //
+  //  // After all data is returned, close connection and return results
+  //  query.on('end', function() {
+  //    client.end();
+  //    return res.json(results);
+  //  });
+  //
+  //  // Handle Errors
+  //  if(err) {
+  //    console.log(err);
+  //  }
+  //
+  //});
 });
 
 router.post('/update_bike_position', function(req, res) {
