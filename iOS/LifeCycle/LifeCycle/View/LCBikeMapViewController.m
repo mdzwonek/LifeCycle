@@ -20,6 +20,7 @@ static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
 @interface LCBikeMapViewController () <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic) IBOutlet UIButton *profileButton;
 
 @property (nonatomic) CLLocationManager *locationManager;
 
@@ -42,6 +43,8 @@ static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
     } else if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
         _mapView.showsUserLocation = YES;
     }
+    
+    _profileButton.layer.cornerRadius = 5.0f;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -61,7 +64,9 @@ static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
     NSMutableArray *annotations = [NSMutableArray new];
     [[[LCDataManager sharedManager] bikes] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         LCBike *bike = (LCBike *)obj;
-        [annotations addObject:[[LCBikePinAnnotation alloc] initWithBike:bike]];
+        if (!bike.rented) {
+            [annotations addObject:[[LCBikePinAnnotation alloc] initWithBike:bike]];
+        }
     }];
     [_mapView removeAnnotations:_mapView.annotations];
     [_mapView addAnnotations:annotations];

@@ -9,5 +9,6 @@
 @interface LCStyling : NSObject
 
 + (UIColor *)mainColor;
++ (UIColor *)redColor;
 
 @end
