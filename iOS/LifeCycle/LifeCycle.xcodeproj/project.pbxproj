@@ -59,6 +59,64 @@
 		48C1D99D1AEBF7E0007006B6 /* LCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D99C1AEBF7E0007006B6 /* LCLoginViewController.m */; };
 		48C1D99F1AEBF979007006B6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1D99E1AEBF979007006B6 /* MediaPlayer.framework */; };
 		48C1D9A21AEBFD9A007006B6 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9A11AEBFD8E007006B6 /* video.mp4 */; };
+		E19158EC1AEC8F4B00A25697 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E19158871AEC8F4A00A25697 /* .gitignore */; };
+		E19158ED1AEC8F4B00A25697 /* acknowledgments.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158881AEC8F4A00A25697 /* acknowledgments.md */; };
+		E19158EE1AEC8F4B00A25697 /* future_payments_mobile.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588A1AEC8F4A00A25697 /* future_payments_mobile.md */; };
+		E19158EF1AEC8F4B00A25697 /* future_payments_server.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588B1AEC8F4A00A25697 /* future_payments_server.md */; };
+		E19158F01AEC8F4B00A25697 /* future_payments_mobile.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588D1AEC8F4A00A25697 /* future_payments_mobile.md */; };
+		E19158F11AEC8F4B00A25697 /* future_payments_server.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588E1AEC8F4A00A25697 /* future_payments_server.md */; };
+		E19158F21AEC8F4B00A25697 /* profile_sharing_mobile.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588F1AEC8F4A00A25697 /* profile_sharing_mobile.md */; };
+		E19158F31AEC8F4B00A25697 /* profile_sharing_server.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158901AEC8F4A00A25697 /* profile_sharing_server.md */; };
+		E19158F41AEC8F4B00A25697 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158911AEC8F4A00A25697 /* README.md */; };
+		E19158F51AEC8F4B00A25697 /* single_payment.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158921AEC8F4A00A25697 /* single_payment.md */; };
+		E19158F61AEC8F4B00A25697 /* profile_sharing_mobile.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158931AEC8F4A00A25697 /* profile_sharing_mobile.md */; };
+		E19158F71AEC8F4B00A25697 /* profile_sharing_server.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158941AEC8F4A00A25697 /* profile_sharing_server.md */; };
+		E19158F81AEC8F4B00A25697 /* sdk-screens.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158951AEC8F4A00A25697 /* sdk-screens.png */; };
+		E19158F91AEC8F4B00A25697 /* single_payment.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158961AEC8F4A00A25697 /* single_payment.md */; };
+		E19158FA1AEC8F4B00A25697 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158971AEC8F4A00A25697 /* LICENSE.md */; };
+		E19158FB1AEC8F4B00A25697 /* PayPal-iOS-SDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E19158981AEC8F4A00A25697 /* PayPal-iOS-SDK.podspec */; };
+		E19158FC1AEC8F4B00A25697 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E19158A21AEC8F4A00A25697 /* libPayPalMobile.a */; };
+		E19158FD1AEC8F4B00A25697 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158AA1AEC8F4A00A25697 /* README.md */; };
+		E19158FE1AEC8F4B00A25697 /* release_notes.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158AB1AEC8F4A00A25697 /* release_notes.md */; };
+		E19158FF1AEC8F4B00A25697 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E19158AD1AEC8F4A00A25697 /* .gitignore */; };
+		E19159001AEC8F4B00A25697 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158AF1AEC8F4A00A25697 /* Default-568h@2x.png */; };
+		E19159011AEC8F4B00A25697 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158B01AEC8F4A00A25697 /* Default.png */; };
+		E19159021AEC8F4B00A25697 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158B11AEC8F4A00A25697 /* Default@2x.png */; };
+		E19159031AEC8F4B00A25697 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E19158B21AEC8F4A00A25697 /* InfoPlist.strings */; };
+		E19159041AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19158B41AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard */; };
+		E19159051AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19158B61AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard */; };
+		E19159061AEC8F4B00A25697 /* button_secondary.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158B91AEC8F4B00A25697 /* button_secondary.png */; };
+		E19159071AEC8F4B00A25697 /* button_secondary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158BA1AEC8F4B00A25697 /* button_secondary@2x.png */; };
+		E19159081AEC8F4B00A25697 /* button_secondary_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158BB1AEC8F4B00A25697 /* button_secondary_selected.png */; };
+		E19159091AEC8F4B00A25697 /* button_secondary_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158BC1AEC8F4B00A25697 /* button_secondary_selected@2x.png */; };
+		E191590A1AEC8F4B00A25697 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158BD1AEC8F4B00A25697 /* check.png */; };
+		E191590B1AEC8F4B00A25697 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158BE1AEC8F4B00A25697 /* check@2x.png */; };
+		E191590C1AEC8F4B00A25697 /* ios_sample_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158BF1AEC8F4B00A25697 /* ios_sample_icon.png */; };
+		E191590D1AEC8F4B00A25697 /* ios_sample_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158C01AEC8F4B00A25697 /* ios_sample_icon@2x.png */; };
+		E191590E1AEC8F4B00A25697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E19158C11AEC8F4B00A25697 /* main.m */; };
+		E191590F1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E19158C21AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist */; };
+		E19159101AEC8F4B00A25697 /* ZZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E19158C51AEC8F4B00A25697 /* ZZAppDelegate.m */; };
+		E19159111AEC8F4B00A25697 /* ZZFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E19158C71AEC8F4B00A25697 /* ZZFlipsideViewController.m */; };
+		E19159121AEC8F4B00A25697 /* ZZMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E19158C91AEC8F4B00A25697 /* ZZMainViewController.m */; };
+		E19159131AEC8F4B00A25697 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158CF1AEC8F4B00A25697 /* Default-568h@2x.png */; };
+		E19159141AEC8F4B00A25697 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158D01AEC8F4B00A25697 /* Default.png */; };
+		E19159151AEC8F4B00A25697 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158D11AEC8F4B00A25697 /* Default@2x.png */; };
+		E19159161AEC8F4B00A25697 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E19158D21AEC8F4B00A25697 /* InfoPlist.strings */; };
+		E19159171AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19158D41AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard */; };
+		E19159181AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19158D61AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard */; };
+		E19159191AEC8F4B00A25697 /* FlipsideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19158D81AEC8F4B00A25697 /* FlipsideViewController.swift */; };
+		E191591A1AEC8F4B00A25697 /* button_secondary.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158DA1AEC8F4B00A25697 /* button_secondary.png */; };
+		E191591B1AEC8F4B00A25697 /* button_secondary@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158DB1AEC8F4B00A25697 /* button_secondary@2x.png */; };
+		E191591C1AEC8F4B00A25697 /* button_secondary_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158DC1AEC8F4B00A25697 /* button_secondary_selected.png */; };
+		E191591D1AEC8F4B00A25697 /* button_secondary_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158DD1AEC8F4B00A25697 /* button_secondary_selected@2x.png */; };
+		E191591E1AEC8F4B00A25697 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158DE1AEC8F4B00A25697 /* check.png */; };
+		E191591F1AEC8F4B00A25697 /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158DF1AEC8F4B00A25697 /* check@2x.png */; };
+		E19159201AEC8F4B00A25697 /* ios_sample_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158E01AEC8F4B00A25697 /* ios_sample_icon.png */; };
+		E19159211AEC8F4B00A25697 /* ios_sample_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158E11AEC8F4B00A25697 /* ios_sample_icon@2x.png */; };
+		E19159221AEC8F4B00A25697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E19158E21AEC8F4B00A25697 /* main.m */; };
+		E19159231AEC8F4B00A25697 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19158E31AEC8F4B00A25697 /* MainViewController.swift */; };
+		E19159241AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E19158E51AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist */; };
+		E19159251AEC8F4B00A25697 /* ZZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E19158E81AEC8F4B00A25697 /* ZZAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +126,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 48C1D9041AEBC3BB007006B6;
 			remoteInfo = LifeCycle;
+		};
+		E19159271AEC8F4B00A25697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E19158CA1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 849BE6E816D4352100E03EEC;
+			remoteInfo = "PayPal-iOS-SDK-Sample-App";
+		};
+		E191592A1AEC8F4B00A25697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E19158E91AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 849BE6E816D4352100E03EEC;
+			remoteInfo = "PayPal-iOS-SDK-Sample-App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -162,6 +234,88 @@
 		48C1D99C1AEBF7E0007006B6 /* LCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCLoginViewController.m; path = View/LCLoginViewController.m; sourceTree = "<group>"; };
 		48C1D99E1AEBF979007006B6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		48C1D9A11AEBFD8E007006B6 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = LifeCycle/Resources/video.mp4; sourceTree = "<group>"; };
+		E19158871AEC8F4A00A25697 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E19158881AEC8F4A00A25697 /* acknowledgments.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = acknowledgments.md; sourceTree = "<group>"; };
+		E191588A1AEC8F4A00A25697 /* future_payments_mobile.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = future_payments_mobile.md; sourceTree = "<group>"; };
+		E191588B1AEC8F4A00A25697 /* future_payments_server.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = future_payments_server.md; sourceTree = "<group>"; };
+		E191588D1AEC8F4A00A25697 /* future_payments_mobile.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = future_payments_mobile.md; sourceTree = "<group>"; };
+		E191588E1AEC8F4A00A25697 /* future_payments_server.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = future_payments_server.md; sourceTree = "<group>"; };
+		E191588F1AEC8F4A00A25697 /* profile_sharing_mobile.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = profile_sharing_mobile.md; sourceTree = "<group>"; };
+		E19158901AEC8F4A00A25697 /* profile_sharing_server.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = profile_sharing_server.md; sourceTree = "<group>"; };
+		E19158911AEC8F4A00A25697 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E19158921AEC8F4A00A25697 /* single_payment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = single_payment.md; sourceTree = "<group>"; };
+		E19158931AEC8F4A00A25697 /* profile_sharing_mobile.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = profile_sharing_mobile.md; sourceTree = "<group>"; };
+		E19158941AEC8F4A00A25697 /* profile_sharing_server.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = profile_sharing_server.md; sourceTree = "<group>"; };
+		E19158951AEC8F4A00A25697 /* sdk-screens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdk-screens.png"; sourceTree = "<group>"; };
+		E19158961AEC8F4A00A25697 /* single_payment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = single_payment.md; sourceTree = "<group>"; };
+		E19158971AEC8F4A00A25697 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		E19158981AEC8F4A00A25697 /* PayPal-iOS-SDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "PayPal-iOS-SDK.podspec"; sourceTree = "<group>"; };
+		E191589A1AEC8F4A00A25697 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
+		E191589B1AEC8F4A00A25697 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
+		E191589C1AEC8F4A00A25697 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
+		E191589D1AEC8F4A00A25697 /* CardIOPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewController.h; sourceTree = "<group>"; };
+		E191589E1AEC8F4A00A25697 /* CardIOPaymentViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOPaymentViewControllerDelegate.h; sourceTree = "<group>"; };
+		E191589F1AEC8F4A00A25697 /* CardIOUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOUtilities.h; sourceTree = "<group>"; };
+		E19158A01AEC8F4A00A25697 /* CardIOView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOView.h; sourceTree = "<group>"; };
+		E19158A11AEC8F4A00A25697 /* CardIOViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOViewDelegate.h; sourceTree = "<group>"; };
+		E19158A21AEC8F4A00A25697 /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		E19158A31AEC8F4A00A25697 /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		E19158A41AEC8F4A00A25697 /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		E19158A51AEC8F4A00A25697 /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		E19158A61AEC8F4A00A25697 /* PayPalOAuthScopes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalOAuthScopes.h; sourceTree = "<group>"; };
+		E19158A71AEC8F4A00A25697 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		E19158A81AEC8F4A00A25697 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
+		E19158A91AEC8F4A00A25697 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
+		E19158AA1AEC8F4A00A25697 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E19158AB1AEC8F4A00A25697 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = release_notes.md; sourceTree = "<group>"; };
+		E19158AD1AEC8F4A00A25697 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		E19158AF1AEC8F4A00A25697 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E19158B01AEC8F4A00A25697 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E19158B11AEC8F4A00A25697 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E19158B31AEC8F4A00A25697 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E19158B51AEC8F4B00A25697 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E19158B71AEC8F4B00A25697 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		E19158B91AEC8F4B00A25697 /* button_secondary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_secondary.png; sourceTree = "<group>"; };
+		E19158BA1AEC8F4B00A25697 /* button_secondary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary@2x.png"; sourceTree = "<group>"; };
+		E19158BB1AEC8F4B00A25697 /* button_secondary_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_secondary_selected.png; sourceTree = "<group>"; };
+		E19158BC1AEC8F4B00A25697 /* button_secondary_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary_selected@2x.png"; sourceTree = "<group>"; };
+		E19158BD1AEC8F4B00A25697 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		E19158BE1AEC8F4B00A25697 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		E19158BF1AEC8F4B00A25697 /* ios_sample_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_sample_icon.png; sourceTree = "<group>"; };
+		E19158C01AEC8F4B00A25697 /* ios_sample_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios_sample_icon@2x.png"; sourceTree = "<group>"; };
+		E19158C11AEC8F4B00A25697 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E19158C21AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PayPal-iOS-SDK-Sample-App-Info.plist"; sourceTree = "<group>"; };
+		E19158C31AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayPal-iOS-SDK-Sample-App-Prefix.pch"; sourceTree = "<group>"; };
+		E19158C41AEC8F4B00A25697 /* ZZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAppDelegate.h; sourceTree = "<group>"; };
+		E19158C51AEC8F4B00A25697 /* ZZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZAppDelegate.m; sourceTree = "<group>"; };
+		E19158C61AEC8F4B00A25697 /* ZZFlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFlipsideViewController.h; sourceTree = "<group>"; };
+		E19158C71AEC8F4B00A25697 /* ZZFlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFlipsideViewController.m; sourceTree = "<group>"; };
+		E19158C81AEC8F4B00A25697 /* ZZMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZMainViewController.h; sourceTree = "<group>"; };
+		E19158C91AEC8F4B00A25697 /* ZZMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZMainViewController.m; sourceTree = "<group>"; };
+		E19158CA1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "PayPal-iOS-SDK-Sample-App.xcodeproj"; sourceTree = "<group>"; };
+		E19158CF1AEC8F4B00A25697 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E19158D01AEC8F4B00A25697 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E19158D11AEC8F4B00A25697 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E19158D31AEC8F4B00A25697 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E19158D51AEC8F4B00A25697 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		E19158D71AEC8F4B00A25697 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		E19158D81AEC8F4B00A25697 /* FlipsideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipsideViewController.swift; sourceTree = "<group>"; };
+		E19158DA1AEC8F4B00A25697 /* button_secondary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_secondary.png; sourceTree = "<group>"; };
+		E19158DB1AEC8F4B00A25697 /* button_secondary@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary@2x.png"; sourceTree = "<group>"; };
+		E19158DC1AEC8F4B00A25697 /* button_secondary_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_secondary_selected.png; sourceTree = "<group>"; };
+		E19158DD1AEC8F4B00A25697 /* button_secondary_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_secondary_selected@2x.png"; sourceTree = "<group>"; };
+		E19158DE1AEC8F4B00A25697 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		E19158DF1AEC8F4B00A25697 /* check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check@2x.png"; sourceTree = "<group>"; };
+		E19158E01AEC8F4B00A25697 /* ios_sample_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_sample_icon.png; sourceTree = "<group>"; };
+		E19158E11AEC8F4B00A25697 /* ios_sample_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ios_sample_icon@2x.png"; sourceTree = "<group>"; };
+		E19158E21AEC8F4B00A25697 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E19158E31AEC8F4B00A25697 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E19158E41AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayPal-iOS-SDK-Sample-App-Bridging-Header.h"; sourceTree = "<group>"; };
+		E19158E51AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PayPal-iOS-SDK-Sample-App-Info.plist"; sourceTree = "<group>"; };
+		E19158E61AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PayPal-iOS-SDK-Sample-App-Prefix.pch"; sourceTree = "<group>"; };
+		E19158E71AEC8F4B00A25697 /* ZZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAppDelegate.h; sourceTree = "<group>"; };
+		E19158E81AEC8F4B00A25697 /* ZZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZAppDelegate.m; sourceTree = "<group>"; };
+		E19158E91AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "PayPal-iOS-SDK-Sample-App.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +326,7 @@
 				488708C61AEC0EEB00AB75A0 /* Accounts.framework in Frameworks */,
 				488708D81AEC3EB700AB75A0 /* CoreBluetooth.framework in Frameworks */,
 				48C1D9441AEBC829007006B6 /* CoreLocation.framework in Frameworks */,
+				E19158FC1AEC8F4B00A25697 /* libPayPalMobile.a in Frameworks */,
 				488708D61AEC3E9900AB75A0 /* EstimoteSDK.framework in Frameworks */,
 				48C1D99F1AEBF979007006B6 /* MediaPlayer.framework in Frameworks */,
 				48C1D94B1AEBCA0C007006B6 /* MapKit.framework in Frameworks */,
@@ -352,6 +507,7 @@
 		48C1D9621AEBEEFB007006B6 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				E19158861AEC8F4A00A25697 /* PayPal-iOS-SDK */,
 				48C1D9631AEBEF07007006B6 /* AFNetworking */,
 				488708D41AEC3E7000AB75A0 /* EstimoteSDK */,
 			);
@@ -418,6 +574,184 @@
 			);
 			name = "UIKit+AFNetworking";
 			path = "LifeCycle/Libraries/AFNetworking/UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		E19158861AEC8F4A00A25697 /* PayPal-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				E19158871AEC8F4A00A25697 /* .gitignore */,
+				E19158881AEC8F4A00A25697 /* acknowledgments.md */,
+				E19158891AEC8F4A00A25697 /* docs */,
+				E19158971AEC8F4A00A25697 /* LICENSE.md */,
+				E19158981AEC8F4A00A25697 /* PayPal-iOS-SDK.podspec */,
+				E19158991AEC8F4A00A25697 /* PayPalMobile */,
+				E19158AA1AEC8F4A00A25697 /* README.md */,
+				E19158AB1AEC8F4A00A25697 /* release_notes.md */,
+				E19158AC1AEC8F4A00A25697 /* SampleApp */,
+				E19158CD1AEC8F4B00A25697 /* SampleApp-Swift */,
+			);
+			name = "PayPal-iOS-SDK";
+			path = "LifeCycle/Libraries/PayPal-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		E19158891AEC8F4A00A25697 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				E191588A1AEC8F4A00A25697 /* future_payments_mobile.md */,
+				E191588B1AEC8F4A00A25697 /* future_payments_server.md */,
+				E191588C1AEC8F4A00A25697 /* ja */,
+				E19158931AEC8F4A00A25697 /* profile_sharing_mobile.md */,
+				E19158941AEC8F4A00A25697 /* profile_sharing_server.md */,
+				E19158951AEC8F4A00A25697 /* sdk-screens.png */,
+				E19158961AEC8F4A00A25697 /* single_payment.md */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		E191588C1AEC8F4A00A25697 /* ja */ = {
+			isa = PBXGroup;
+			children = (
+				E191588D1AEC8F4A00A25697 /* future_payments_mobile.md */,
+				E191588E1AEC8F4A00A25697 /* future_payments_server.md */,
+				E191588F1AEC8F4A00A25697 /* profile_sharing_mobile.md */,
+				E19158901AEC8F4A00A25697 /* profile_sharing_server.md */,
+				E19158911AEC8F4A00A25697 /* README.md */,
+				E19158921AEC8F4A00A25697 /* single_payment.md */,
+			);
+			path = ja;
+			sourceTree = "<group>";
+		};
+		E19158991AEC8F4A00A25697 /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				E191589A1AEC8F4A00A25697 /* CardIO.h */,
+				E191589B1AEC8F4A00A25697 /* CardIOCreditCardInfo.h */,
+				E191589C1AEC8F4A00A25697 /* CardIODetectionMode.h */,
+				E191589D1AEC8F4A00A25697 /* CardIOPaymentViewController.h */,
+				E191589E1AEC8F4A00A25697 /* CardIOPaymentViewControllerDelegate.h */,
+				E191589F1AEC8F4A00A25697 /* CardIOUtilities.h */,
+				E19158A01AEC8F4A00A25697 /* CardIOView.h */,
+				E19158A11AEC8F4A00A25697 /* CardIOViewDelegate.h */,
+				E19158A21AEC8F4A00A25697 /* libPayPalMobile.a */,
+				E19158A31AEC8F4A00A25697 /* PayPalConfiguration.h */,
+				E19158A41AEC8F4A00A25697 /* PayPalFuturePaymentViewController.h */,
+				E19158A51AEC8F4A00A25697 /* PayPalMobile.h */,
+				E19158A61AEC8F4A00A25697 /* PayPalOAuthScopes.h */,
+				E19158A71AEC8F4A00A25697 /* PayPalPayment.h */,
+				E19158A81AEC8F4A00A25697 /* PayPalPaymentViewController.h */,
+				E19158A91AEC8F4A00A25697 /* PayPalProfileSharingViewController.h */,
+			);
+			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
+		E19158AC1AEC8F4A00A25697 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				E19158AD1AEC8F4A00A25697 /* .gitignore */,
+				E19158AE1AEC8F4A00A25697 /* PayPal-iOS-SDK-Sample-App */,
+				E19158CA1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.xcodeproj */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		E19158AE1AEC8F4A00A25697 /* PayPal-iOS-SDK-Sample-App */ = {
+			isa = PBXGroup;
+			children = (
+				E19158AF1AEC8F4A00A25697 /* Default-568h@2x.png */,
+				E19158B01AEC8F4A00A25697 /* Default.png */,
+				E19158B11AEC8F4A00A25697 /* Default@2x.png */,
+				E19158B21AEC8F4A00A25697 /* InfoPlist.strings */,
+				E19158B41AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard */,
+				E19158B61AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard */,
+				E19158B81AEC8F4B00A25697 /* Images */,
+				E19158C11AEC8F4B00A25697 /* main.m */,
+				E19158C21AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist */,
+				E19158C31AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Prefix.pch */,
+				E19158C41AEC8F4B00A25697 /* ZZAppDelegate.h */,
+				E19158C51AEC8F4B00A25697 /* ZZAppDelegate.m */,
+				E19158C61AEC8F4B00A25697 /* ZZFlipsideViewController.h */,
+				E19158C71AEC8F4B00A25697 /* ZZFlipsideViewController.m */,
+				E19158C81AEC8F4B00A25697 /* ZZMainViewController.h */,
+				E19158C91AEC8F4B00A25697 /* ZZMainViewController.m */,
+			);
+			path = "PayPal-iOS-SDK-Sample-App";
+			sourceTree = "<group>";
+		};
+		E19158B81AEC8F4B00A25697 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E19158B91AEC8F4B00A25697 /* button_secondary.png */,
+				E19158BA1AEC8F4B00A25697 /* button_secondary@2x.png */,
+				E19158BB1AEC8F4B00A25697 /* button_secondary_selected.png */,
+				E19158BC1AEC8F4B00A25697 /* button_secondary_selected@2x.png */,
+				E19158BD1AEC8F4B00A25697 /* check.png */,
+				E19158BE1AEC8F4B00A25697 /* check@2x.png */,
+				E19158BF1AEC8F4B00A25697 /* ios_sample_icon.png */,
+				E19158C01AEC8F4B00A25697 /* ios_sample_icon@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E19158CB1AEC8F4B00A25697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E19159281AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E19158CD1AEC8F4B00A25697 /* SampleApp-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				E19158CE1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App */,
+				E19158E91AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.xcodeproj */,
+			);
+			path = "SampleApp-Swift";
+			sourceTree = "<group>";
+		};
+		E19158CE1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App */ = {
+			isa = PBXGroup;
+			children = (
+				E19158CF1AEC8F4B00A25697 /* Default-568h@2x.png */,
+				E19158D01AEC8F4B00A25697 /* Default.png */,
+				E19158D11AEC8F4B00A25697 /* Default@2x.png */,
+				E19158D21AEC8F4B00A25697 /* InfoPlist.strings */,
+				E19158D41AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard */,
+				E19158D61AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard */,
+				E19158D81AEC8F4B00A25697 /* FlipsideViewController.swift */,
+				E19158D91AEC8F4B00A25697 /* Images */,
+				E19158E21AEC8F4B00A25697 /* main.m */,
+				E19158E31AEC8F4B00A25697 /* MainViewController.swift */,
+				E19158E41AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Bridging-Header.h */,
+				E19158E51AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist */,
+				E19158E61AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Prefix.pch */,
+				E19158E71AEC8F4B00A25697 /* ZZAppDelegate.h */,
+				E19158E81AEC8F4B00A25697 /* ZZAppDelegate.m */,
+			);
+			path = "PayPal-iOS-SDK-Sample-App";
+			sourceTree = "<group>";
+		};
+		E19158D91AEC8F4B00A25697 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E19158DA1AEC8F4B00A25697 /* button_secondary.png */,
+				E19158DB1AEC8F4B00A25697 /* button_secondary@2x.png */,
+				E19158DC1AEC8F4B00A25697 /* button_secondary_selected.png */,
+				E19158DD1AEC8F4B00A25697 /* button_secondary_selected@2x.png */,
+				E19158DE1AEC8F4B00A25697 /* check.png */,
+				E19158DF1AEC8F4B00A25697 /* check@2x.png */,
+				E19158E01AEC8F4B00A25697 /* ios_sample_icon.png */,
+				E19158E11AEC8F4B00A25697 /* ios_sample_icon@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E19158EA1AEC8F4B00A25697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E191592B1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +821,16 @@
 			mainGroup = 48C1D8FC1AEBC3BB007006B6;
 			productRefGroup = 48C1D9061AEBC3BB007006B6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E19158CB1AEC8F4B00A25697 /* Products */;
+					ProjectRef = E19158CA1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.xcodeproj */;
+				},
+				{
+					ProductGroup = E19158EA1AEC8F4B00A25697 /* Products */;
+					ProjectRef = E19158E91AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				48C1D9041AEBC3BB007006B6 /* LifeCycle */,
@@ -495,6 +839,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		E19159281AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "PayPal-iOS-SDK-Sample-App.app";
+			remoteRef = E19159271AEC8F4B00A25697 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E191592B1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "PayPal-iOS-SDK-Sample-App.app";
+			remoteRef = E191592A1AEC8F4B00A25697 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		48C1D9031AEBC3BB007006B6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -502,15 +863,49 @@
 			files = (
 				48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */,
 				488708EF1AEC7D7600AB75A0 /* star_empty.png in Resources */,
+				E19159241AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist in Resources */,
+				E191591C1AEC8F4B00A25697 /* button_secondary_selected.png in Resources */,
+				E191590F1AEC8F4B00A25697 /* PayPal-iOS-SDK-Sample-App-Info.plist in Resources */,
+				E19159141AEC8F4B00A25697 /* Default.png in Resources */,
+				E19158FB1AEC8F4B00A25697 /* PayPal-iOS-SDK.podspec in Resources */,
+				E19159161AEC8F4B00A25697 /* InfoPlist.strings in Resources */,
+				E19159181AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard in Resources */,
+				E19159051AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard in Resources */,
 				488708F01AEC7D7600AB75A0 /* star_full.png in Resources */,
+				E19159041AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard in Resources */,
 				48C1D9A21AEBFD9A007006B6 /* video.mp4 in Resources */,
+				E19159091AEC8F4B00A25697 /* button_secondary_selected@2x.png in Resources */,
+				E19158EC1AEC8F4B00A25697 /* .gitignore in Resources */,
 				488708E01AEC4B3400AB75A0 /* estimote_bg.png in Resources */,
+				E19159211AEC8F4B00A25697 /* ios_sample_icon@2x.png in Resources */,
+				E19159071AEC8F4B00A25697 /* button_secondary@2x.png in Resources */,
+				E191591B1AEC8F4B00A25697 /* button_secondary@2x.png in Resources */,
+				E19159011AEC8F4B00A25697 /* Default.png in Resources */,
+				E19159081AEC8F4B00A25697 /* button_secondary_selected.png in Resources */,
+				E191590D1AEC8F4B00A25697 /* ios_sample_icon@2x.png in Resources */,
 				48C1D9191AEBC3BC007006B6 /* LaunchScreen.xib in Resources */,
+				E191590A1AEC8F4B00A25697 /* check.png in Resources */,
+				E19159131AEC8F4B00A25697 /* Default-568h@2x.png in Resources */,
 				48C1D9531AEBD751007006B6 /* bike.png in Resources */,
+				E19159061AEC8F4B00A25697 /* button_secondary.png in Resources */,
+				E19159031AEC8F4B00A25697 /* InfoPlist.strings in Resources */,
+				E191590C1AEC8F4B00A25697 /* ios_sample_icon.png in Resources */,
 				48C1D9161AEBC3BC007006B6 /* Images.xcassets in Resources */,
+				E19158FF1AEC8F4B00A25697 /* .gitignore in Resources */,
+				E191591A1AEC8F4B00A25697 /* button_secondary.png in Resources */,
+				E191590B1AEC8F4B00A25697 /* check@2x.png in Resources */,
+				E19159201AEC8F4B00A25697 /* ios_sample_icon.png in Resources */,
+				E19159021AEC8F4B00A25697 /* Default@2x.png in Resources */,
+				E191591D1AEC8F4B00A25697 /* button_secondary_selected@2x.png in Resources */,
+				E19159151AEC8F4B00A25697 /* Default@2x.png in Resources */,
 				488708E91AEC68BC00AB75A0 /* btn_map@2x.png in Resources */,
 				48C1D95F1AEBE9F6007006B6 /* person.png in Resources */,
+				E191591E1AEC8F4B00A25697 /* check.png in Resources */,
+				E19159001AEC8F4B00A25697 /* Default-568h@2x.png in Resources */,
+				E19158F81AEC8F4B00A25697 /* sdk-screens.png in Resources */,
 				488708E81AEC68BC00AB75A0 /* btn_map.png in Resources */,
+				E19159171AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard in Resources */,
+				E191591F1AEC8F4B00A25697 /* check@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,38 +923,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E19159111AEC8F4B00A25697 /* ZZFlipsideViewController.m in Sources */,
 				48C1D97C1AEBEF23007006B6 /* AFSecurityPolicy.m in Sources */,
 				48C1D9491AEBC89B007006B6 /* LCBikeMapViewController.m in Sources */,
+				E19158FE1AEC8F4B00A25697 /* release_notes.md in Sources */,
 				48C1D97B1AEBEF23007006B6 /* AFNetworkReachabilityManager.m in Sources */,
+				E19158F21AEC8F4B00A25697 /* profile_sharing_mobile.md in Sources */,
 				48C1D93E1AEBC6BB007006B6 /* LCUser.m in Sources */,
 				48C1D99D1AEBF7E0007006B6 /* LCLoginViewController.m in Sources */,
 				488708D31AEC264900AB75A0 /* LCRentalViewController.m in Sources */,
 				48C1D9931AEBEF2C007006B6 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				E19159191AEC8F4B00A25697 /* FlipsideViewController.swift in Sources */,
+				E19158FD1AEC8F4B00A25697 /* README.md in Sources */,
 				48C1D9971AEBEF2C007006B6 /* UIImageView+AFNetworking.m in Sources */,
 				48C1D97D1AEBEF23007006B6 /* AFURLConnectionOperation.m in Sources */,
+				E19158FA1AEC8F4B00A25697 /* LICENSE.md in Sources */,
 				48C1D9941AEBEF2C007006B6 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				E19158F11AEC8F4B00A25697 /* future_payments_server.md in Sources */,
+				E19158EF1AEC8F4B00A25697 /* future_payments_server.md in Sources */,
+				E19158EE1AEC8F4B00A25697 /* future_payments_mobile.md in Sources */,
+				E19158F31AEC8F4B00A25697 /* profile_sharing_server.md in Sources */,
 				48C1D99A1AEBEF2C007006B6 /* UIWebView+AFNetworking.m in Sources */,
+				E19158ED1AEC8F4B00A25697 /* acknowledgments.md in Sources */,
 				48C1D9781AEBEF23007006B6 /* AFHTTPRequestOperation.m in Sources */,
 				48C1D97A1AEBEF23007006B6 /* AFHTTPSessionManager.m in Sources */,
+				E191590E1AEC8F4B00A25697 /* main.m in Sources */,
 				48C1D9951AEBEF2C007006B6 /* UIAlertView+AFNetworking.m in Sources */,
 				48C1D97E1AEBEF23007006B6 /* AFURLRequestSerialization.m in Sources */,
 				48C1D93D1AEBC6BB007006B6 /* LCBike.m in Sources */,
+				E19158F41AEC8F4B00A25697 /* README.md in Sources */,
 				488708C01AEC0C5D00AB75A0 /* LCSplashViewController.m in Sources */,
+				E19159251AEC8F4B00A25697 /* ZZAppDelegate.m in Sources */,
 				48C1D9801AEBEF23007006B6 /* AFURLSessionManager.m in Sources */,
+				E19158F61AEC8F4B00A25697 /* profile_sharing_mobile.md in Sources */,
 				488708CF1AEC143800AB75A0 /* LCStyling.m in Sources */,
 				48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */,
+				E19158F51AEC8F4B00A25697 /* single_payment.md in Sources */,
 				48C1D9791AEBEF23007006B6 /* AFHTTPRequestOperationManager.m in Sources */,
 				48C1D9981AEBEF2C007006B6 /* UIProgressView+AFNetworking.m in Sources */,
+				E19159221AEC8F4B00A25697 /* main.m in Sources */,
 				48C1D90B1AEBC3BC007006B6 /* main.m in Sources */,
 				48C1D9961AEBEF2C007006B6 /* UIButton+AFNetworking.m in Sources */,
 				48C1D97F1AEBEF23007006B6 /* AFURLResponseSerialization.m in Sources */,
 				48C1D9561AEBDABC007006B6 /* LCBikePinAnnotation.m in Sources */,
+				E19159101AEC8F4B00A25697 /* ZZAppDelegate.m in Sources */,
 				488708E31AEC5D8900AB75A0 /* LCProfileViewController.m in Sources */,
+				E19158F01AEC8F4B00A25697 /* future_payments_mobile.md in Sources */,
 				488708EC1AEC695700AB75A0 /* LCBikeLocationViewController.m in Sources */,
 				488708D01AEC143800AB75A0 /* NSString+JSON.m in Sources */,
+				E19158F71AEC8F4B00A25697 /* profile_sharing_server.md in Sources */,
 				48C1D9411AEBC6CA007006B6 /* LCDataManager.m in Sources */,
+				E19159121AEC8F4B00A25697 /* ZZMainViewController.m in Sources */,
 				48C1D9991AEBEF2C007006B6 /* UIRefreshControl+AFNetworking.m in Sources */,
+				E19159231AEC8F4B00A25697 /* MainViewController.swift in Sources */,
 				48C1D9591AEBDB45007006B6 /* LCBikeDetailsViewController.m in Sources */,
+				E19158F91AEC8F4B00A25697 /* single_payment.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +1014,54 @@
 				48C1D9181AEBC3BC007006B6 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		E19158B21AEC8F4A00A25697 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E19158B31AEC8F4A00A25697 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E19158B41AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E19158B51AEC8F4B00A25697 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E19158B61AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E19158B71AEC8F4B00A25697 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E19158D21AEC8F4B00A25697 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E19158D31AEC8F4B00A25697 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E19158D41AEC8F4B00A25697 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E19158D51AEC8F4B00A25697 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E19158D61AEC8F4B00A25697 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E19158D71AEC8F4B00A25697 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -692,6 +1158,10 @@
 				GCC_PREFIX_HEADER = LifeCycle/Prefix.pch;
 				INFOPLIST_FILE = LifeCycle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LifeCycle/Libraries/PayPal-iOS-SDK/PayPalMobile",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -707,6 +1177,10 @@
 				GCC_PREFIX_HEADER = LifeCycle/Prefix.pch;
 				INFOPLIST_FILE = LifeCycle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LifeCycle/Libraries/PayPal-iOS-SDK/PayPalMobile",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
