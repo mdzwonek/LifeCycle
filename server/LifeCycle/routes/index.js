@@ -199,9 +199,9 @@ router.post('/list_bikes', function(req, res) {
   pg.connect(connectionString, function(err, client, done) {
 
     // SQL Query > Select Data
-    var query = client.query("SELECT b.id, b.owner_fk, b.location, b.available, u.name, u.photourl " +
-    "FROM public.bike b, public.user u " +
-    "WHERE b.owner_fk = u.id ORDER BY b.id ASC;");
+    var query = client.query("SELECT b.id, b.owner_fk, b.location, b.available, b.code, r.rating, u.name, u.photourl " +
+    "FROM public.bike b, public.user u, (SELECT  user_fk, AVG(rating) AS rating FROM public.rating GROUP BY user_fk) r " +
+    "WHERE b.owner_fk = u.id AND u.id = r.user_fk;");
 
     // Stream results back one row at a time
     query.on('row', function(row) {

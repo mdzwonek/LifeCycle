@@ -1,2 +1,6 @@
 iOS/LifeCycle/LifeCycle.xcodeproj/project.xcworkspace/xcuserdata
 iOS/LifeCycle/LifeCycle.xcodeproj/xcuserdata
+Node/.idea
+server/LifeCycle/.idea
+server/LifeCycle/node_modules
+npm-debug.log

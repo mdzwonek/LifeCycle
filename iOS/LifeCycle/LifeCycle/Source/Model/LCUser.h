@@ -10,7 +10,8 @@
 
 @property (nonatomic) NSString *userName;
 @property (nonatomic) NSString *profileImageURL;
+@property (nonatomic) NSNumber *rating;
 
-- (instancetype)initWithUserName:(NSString *)userName profileImageURL:(NSString *)profileImageURL;
+- (instancetype)initWithUserName:(NSString *)userName profileImageURL:(NSString *)profileImageURL rating:(NSNumber *)rating;
 
 @end
