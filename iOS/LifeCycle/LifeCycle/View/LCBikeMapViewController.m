@@ -57,7 +57,6 @@ static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)loadData {
@@ -76,6 +75,7 @@ static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
     if ([segue.identifier isEqualToString:BikeDetailsSegueIdentifier]) {
         LCBikeDetailsViewController *detailsViewController = (LCBikeDetailsViewController *)segue.destinationViewController;
         detailsViewController.bike = (LCBike *)sender;
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
     }
 }
 
