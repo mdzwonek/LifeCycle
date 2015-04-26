@@ -22,6 +22,7 @@
 @property (nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic) IBOutlet UIImageView *profileImageView;
 @property (nonatomic) IBOutlet UILabel *userNameLabel;
+@property (nonatomic) IBOutletCollection(UIImageView) NSArray *starImageViews;
 @property (nonatomic) IBOutlet UIView *nearableView;
 @property (nonatomic) IBOutlet NSLayoutConstraint *nearableLeftConstraint;
 @property (nonatomic) IBOutlet UIButton *bookButton;
@@ -48,6 +49,11 @@
     [_profileImageView setImageWithURL:[NSURL URLWithString:_bike.owner.profileImageURL] placeholderImage:[UIImage imageNamed:@"person.png"]];
     
     _userNameLabel.text = _bike.owner.userName;
+    
+    for (NSInteger i = 0; i < _starImageViews.count; i++) {
+        UIImageView *starImageView = _starImageViews[i];
+        starImageView.image = [UIImage imageNamed:_bike.owner.rating.integerValue > i ? @"star_full" : @"star_empty"];
+    }
     
     _bookButton.backgroundColor = [[LCStyling mainColor] colorWithAlphaComponent:0.8f];
     

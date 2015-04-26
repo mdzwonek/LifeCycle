@@ -20,4 +20,8 @@
     return self;
 }
 
+- (NSNumber *)rating {
+    return @(4);
+}
+
 @end
