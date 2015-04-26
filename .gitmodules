@@ -7,3 +7,6 @@
 [submodule "iOS/LifeCycle/LifeCycle/Libraries/PayPal-iOS-SDK"]
 	path = iOS/LifeCycle/LifeCycle/Libraries/PayPal-iOS-SDK
 	url = https://github.com/paypal/PayPal-iOS-SDK.git
+[submodule "iOS/LifeCycle/LifeCycle/Libraries/MHFacebookImageViewer"]
+	path = iOS/LifeCycle/LifeCycle/Libraries/MHFacebookImageViewer
+	url = https://github.com/michaelhenry/MHFacebookImageViewer

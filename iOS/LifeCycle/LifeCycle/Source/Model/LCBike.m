@@ -10,7 +10,7 @@
 
 @implementation LCBike
 
-- (instancetype)initWithID:(NSNumber *)bikeID location:(CLLocation *)location owner:(LCUser *)owner rented:(BOOL)rented code:(NSString *)code {
+- (instancetype)initWithID:(NSNumber *)bikeID location:(CLLocation *)location owner:(LCUser *)owner rented:(BOOL)rented code:(NSString *)code pictures:(NSArray *)pictures {
     self = [super init];
     if (self) {
         _bikeID = bikeID;
@@ -18,6 +18,7 @@
         _owner = owner;
         _rented = rented;
         _code = code;
+        _pictures = pictures;
     }
     return self;
 }
