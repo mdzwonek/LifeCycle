@@ -26,4 +26,6 @@
 - (void)returnBike:(LCBike *)bike atLocation:(CLLocation *)location;
 - (void)updateLocation:(CLLocation *)location ofBike:(LCBike *)bike;
 
+- (void)updateToken:(NSString *)token;
+
 @end

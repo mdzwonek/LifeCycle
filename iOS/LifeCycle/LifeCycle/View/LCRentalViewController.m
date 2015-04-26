@@ -150,13 +150,16 @@
 
 - (void)payPalPaymentViewController:(PayPalPaymentViewController *)paymentViewController
                  didCompletePayment:(PayPalPayment *)completedPayment {
-    [paymentViewController dismissViewControllerAnimated:YES completion:nil];
+    [paymentViewController dismissViewControllerAnimated:YES completion:^{
+        NSArray *viewControllers = self.navigationController.viewControllers;
+        [self.navigationController popToViewController:viewControllers[viewControllers.count - 3] animated:YES];
+    }];
 }
 
 - (void)payPalPaymentDidCancel:(PayPalPaymentViewController *)paymentViewController {
-    UINavigationController *n = self.presentingViewController.navigationController;
     [paymentViewController dismissViewControllerAnimated:YES completion:^{
-        [n popViewControllerAnimated:YES];
+        NSArray *viewControllers = self.navigationController.viewControllers;
+        [self.navigationController popToViewController:viewControllers[viewControllers.count - 3] animated:YES];
     }];
 }
 
@@ -167,6 +170,7 @@
 
 - (void)endRental {
     [[LCDataManager sharedManager] returnBike:_bike atLocation:_locationManager.location];
+    [_locationManager stopUpdatingLocation];
     [_timer invalidate];
 }
 

@@ -13,7 +13,7 @@
 #import "AFNetworking.h"
 
 
-static NSString *const UserIdKey = @"userId-3";
+static NSString *const UserIdKey = @"userId-12";
 static NSString *const UserFullNameKey = @"userFullName";
 static NSString *const ProfileImageURLKey = @"profileImageURL";
 
@@ -64,10 +64,13 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
 
 - (void)loginWithUsername:(NSString *)username fullName:(NSString *)fullName profileImageURL:(NSString *)profileImageURL completion:(void (^)())completion {
     [self sendRequest:@"add_user" withData:@{ @"name": fullName, @"login": username, @"photourl": profileImageURL } andCompletion:^(NSError *error, NSArray *response) {
+        self.userId = response[0][@"id"];
+        self.userFullName = fullName;
+        self.profileImageURL = profileImageURL;
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-        [userDefaults setObject:response[0][@"id"] forKey:UserIdKey];
-        [userDefaults setObject:fullName forKey:UserFullNameKey];
-        [userDefaults setObject:profileImageURL forKey:ProfileImageURLKey];
+        [userDefaults setObject:_userId forKey:UserIdKey];
+        [userDefaults setObject:_userFullName forKey:UserFullNameKey];
+        [userDefaults setObject:_profileImageURL forKey:ProfileImageURLKey];
         [userDefaults synchronize];
         completion();
         
@@ -113,6 +116,14 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
 - (void)updateLocation:(CLLocation *)location ofBike:(LCBike *)bike {
     NSDictionary *data = @{ @"id": bike.bikeID, @"latitude": @(location.coordinate.latitude), @"longitude": @(location.coordinate.longitude) };
     [self sendRequest:@"update_bike_position" withData:data andCompletion:NULL];
+}
+
+
+#pragma mark - APN Token
+
+- (void)updateToken:(NSString *)token {
+    NSDictionary *data = @{ @"id": self.userId, @"token": token };
+    [self sendRequest:@"update_push_token" withData:data andCompletion:NULL];
 }
 
 

@@ -378,4 +378,31 @@ router.post('/update_bike_position', function(req, res) {
   });
 });
 
+router.post('/update_push_token', function(req, res) {
+
+    var results = [];
+
+    // Grab data from http request
+    var data = {id: req.body.id, token: req.body.token};
+
+    // Get a Postgres client from the connection pool
+    pg.connect(connectionString, function(err, client, done) {
+
+        var query = client.query("INSERT INTO token(user_fk, token) VALUES($1, $2);",
+            [data.id, data.token]);
+
+        // After all data is returned, close connection and return results
+        query.on('end', function() {
+            client.end();
+            return res.json(results);
+        });
+
+        // Handle Errors
+        if(err) {
+            console.log(err);
+        }
+
+    });
+});
+
 module.exports = router;
