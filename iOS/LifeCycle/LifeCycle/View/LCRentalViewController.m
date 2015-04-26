@@ -41,6 +41,9 @@
     _codeLabel.text = _bike.code;
     
     _mapView.region = MKCoordinateRegionMake(_bike.location.coordinate, MKCoordinateSpanMake(0.025, 0.025));
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [_mapView setUserTrackingMode:MKUserTrackingModeFollowWithHeading animated:YES];
+    });
     
     self.startDate = [NSDate new];
     
