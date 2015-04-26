@@ -23,6 +23,10 @@
 		488708EC1AEC695700AB75A0 /* LCBikeLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708EB1AEC695700AB75A0 /* LCBikeLocationViewController.m */; };
 		488708EF1AEC7D7600AB75A0 /* star_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 488708ED1AEC7D7600AB75A0 /* star_empty.png */; };
 		488708F01AEC7D7600AB75A0 /* star_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 488708EE1AEC7D7600AB75A0 /* star_full.png */; };
+		488708FF1AECA7AC00AB75A0 /* MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708F91AECA7AC00AB75A0 /* MHFacebookImageViewer.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		488709001AECA7AC00AB75A0 /* Done.png in Resources */ = {isa = PBXBuildFile; fileRef = 488708FB1AECA7AC00AB75A0 /* Done.png */; };
+		488709011AECA7AC00AB75A0 /* Done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 488708FC1AECA7AC00AB75A0 /* Done@2x.png */; };
+		488709021AECA7AC00AB75A0 /* UIImageView+MHFacebookImageViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 488708FE1AECA7AC00AB75A0 /* UIImageView+MHFacebookImageViewer.m */; };
 		48C1D90B1AEBC3BC007006B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90A1AEBC3BC007006B6 /* main.m */; };
 		48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D90D1AEBC3BC007006B6 /* AppDelegate.m */; };
 		48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9121AEBC3BC007006B6 /* Main.storyboard */; };
@@ -59,25 +63,7 @@
 		48C1D99D1AEBF7E0007006B6 /* LCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C1D99C1AEBF7E0007006B6 /* LCLoginViewController.m */; };
 		48C1D99F1AEBF979007006B6 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C1D99E1AEBF979007006B6 /* MediaPlayer.framework */; };
 		48C1D9A21AEBFD9A007006B6 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48C1D9A11AEBFD8E007006B6 /* video.mp4 */; };
-		E19158EC1AEC8F4B00A25697 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E19158871AEC8F4A00A25697 /* .gitignore */; };
-		E19158ED1AEC8F4B00A25697 /* acknowledgments.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158881AEC8F4A00A25697 /* acknowledgments.md */; };
-		E19158EE1AEC8F4B00A25697 /* future_payments_mobile.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588A1AEC8F4A00A25697 /* future_payments_mobile.md */; };
-		E19158EF1AEC8F4B00A25697 /* future_payments_server.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588B1AEC8F4A00A25697 /* future_payments_server.md */; };
-		E19158F01AEC8F4B00A25697 /* future_payments_mobile.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588D1AEC8F4A00A25697 /* future_payments_mobile.md */; };
-		E19158F11AEC8F4B00A25697 /* future_payments_server.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588E1AEC8F4A00A25697 /* future_payments_server.md */; };
-		E19158F21AEC8F4B00A25697 /* profile_sharing_mobile.md in Sources */ = {isa = PBXBuildFile; fileRef = E191588F1AEC8F4A00A25697 /* profile_sharing_mobile.md */; };
-		E19158F31AEC8F4B00A25697 /* profile_sharing_server.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158901AEC8F4A00A25697 /* profile_sharing_server.md */; };
-		E19158F41AEC8F4B00A25697 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158911AEC8F4A00A25697 /* README.md */; };
-		E19158F51AEC8F4B00A25697 /* single_payment.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158921AEC8F4A00A25697 /* single_payment.md */; };
-		E19158F61AEC8F4B00A25697 /* profile_sharing_mobile.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158931AEC8F4A00A25697 /* profile_sharing_mobile.md */; };
-		E19158F71AEC8F4B00A25697 /* profile_sharing_server.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158941AEC8F4A00A25697 /* profile_sharing_server.md */; };
-		E19158F81AEC8F4B00A25697 /* sdk-screens.png in Resources */ = {isa = PBXBuildFile; fileRef = E19158951AEC8F4A00A25697 /* sdk-screens.png */; };
-		E19158F91AEC8F4B00A25697 /* single_payment.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158961AEC8F4A00A25697 /* single_payment.md */; };
-		E19158FA1AEC8F4B00A25697 /* LICENSE.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158971AEC8F4A00A25697 /* LICENSE.md */; };
-		E19158FB1AEC8F4B00A25697 /* PayPal-iOS-SDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E19158981AEC8F4A00A25697 /* PayPal-iOS-SDK.podspec */; };
 		E19158FC1AEC8F4B00A25697 /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E19158A21AEC8F4A00A25697 /* libPayPalMobile.a */; };
-		E19158FD1AEC8F4B00A25697 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158AA1AEC8F4A00A25697 /* README.md */; };
-		E19158FE1AEC8F4B00A25697 /* release_notes.md in Sources */ = {isa = PBXBuildFile; fileRef = E19158AB1AEC8F4A00A25697 /* release_notes.md */; };
 		E191592D1AEC90AF00A25697 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E191592C1AEC90AF00A25697 /* AudioToolbox.framework */; };
 		E191592F1AEC90B900A25697 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E191592E1AEC90B900A25697 /* AVFoundation.framework */; };
 		E19159311AEC90CB00A25697 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E19159301AEC90CB00A25697 /* CoreMedia.framework */; };
@@ -119,6 +105,12 @@
 		488708ED1AEC7D7600AB75A0 /* star_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_empty.png; path = LifeCycle/Resources/star_empty.png; sourceTree = "<group>"; };
 		488708EE1AEC7D7600AB75A0 /* star_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star_full.png; path = LifeCycle/Resources/star_full.png; sourceTree = "<group>"; };
 		488708F51AEC92A100AB75A0 /* QuirkyLondon.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = QuirkyLondon.gpx; path = LifeCycle.xcodeproj/../LifeCycle/Resources/QuirkyLondon.gpx; sourceTree = "<group>"; };
+		488708F81AECA7AC00AB75A0 /* MHFacebookImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHFacebookImageViewer.h; sourceTree = "<group>"; };
+		488708F91AECA7AC00AB75A0 /* MHFacebookImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFacebookImageViewer.m; sourceTree = "<group>"; };
+		488708FB1AECA7AC00AB75A0 /* Done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Done.png; sourceTree = "<group>"; };
+		488708FC1AECA7AC00AB75A0 /* Done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done@2x.png"; sourceTree = "<group>"; };
+		488708FD1AECA7AC00AB75A0 /* UIImageView+MHFacebookImageViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MHFacebookImageViewer.h"; sourceTree = "<group>"; };
+		488708FE1AECA7AC00AB75A0 /* UIImageView+MHFacebookImageViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MHFacebookImageViewer.m"; sourceTree = "<group>"; };
 		48C1D9051AEBC3BB007006B6 /* LifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48C1D9091AEBC3BB007006B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48C1D90A1AEBC3BC007006B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -187,22 +179,6 @@
 		48C1D99C1AEBF7E0007006B6 /* LCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LCLoginViewController.m; path = View/LCLoginViewController.m; sourceTree = "<group>"; };
 		48C1D99E1AEBF979007006B6 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		48C1D9A11AEBFD8E007006B6 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = LifeCycle/Resources/video.mp4; sourceTree = "<group>"; };
-		E19158871AEC8F4A00A25697 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		E19158881AEC8F4A00A25697 /* acknowledgments.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = acknowledgments.md; sourceTree = "<group>"; };
-		E191588A1AEC8F4A00A25697 /* future_payments_mobile.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = future_payments_mobile.md; sourceTree = "<group>"; };
-		E191588B1AEC8F4A00A25697 /* future_payments_server.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = future_payments_server.md; sourceTree = "<group>"; };
-		E191588D1AEC8F4A00A25697 /* future_payments_mobile.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = future_payments_mobile.md; sourceTree = "<group>"; };
-		E191588E1AEC8F4A00A25697 /* future_payments_server.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = future_payments_server.md; sourceTree = "<group>"; };
-		E191588F1AEC8F4A00A25697 /* profile_sharing_mobile.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = profile_sharing_mobile.md; sourceTree = "<group>"; };
-		E19158901AEC8F4A00A25697 /* profile_sharing_server.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = profile_sharing_server.md; sourceTree = "<group>"; };
-		E19158911AEC8F4A00A25697 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E19158921AEC8F4A00A25697 /* single_payment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = single_payment.md; sourceTree = "<group>"; };
-		E19158931AEC8F4A00A25697 /* profile_sharing_mobile.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = profile_sharing_mobile.md; sourceTree = "<group>"; };
-		E19158941AEC8F4A00A25697 /* profile_sharing_server.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = profile_sharing_server.md; sourceTree = "<group>"; };
-		E19158951AEC8F4A00A25697 /* sdk-screens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sdk-screens.png"; sourceTree = "<group>"; };
-		E19158961AEC8F4A00A25697 /* single_payment.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = single_payment.md; sourceTree = "<group>"; };
-		E19158971AEC8F4A00A25697 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		E19158981AEC8F4A00A25697 /* PayPal-iOS-SDK.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "PayPal-iOS-SDK.podspec"; sourceTree = "<group>"; };
 		E191589A1AEC8F4A00A25697 /* CardIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIO.h; sourceTree = "<group>"; };
 		E191589B1AEC8F4A00A25697 /* CardIOCreditCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIOCreditCardInfo.h; sourceTree = "<group>"; };
 		E191589C1AEC8F4A00A25697 /* CardIODetectionMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardIODetectionMode.h; sourceTree = "<group>"; };
@@ -219,8 +195,6 @@
 		E19158A71AEC8F4A00A25697 /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
 		E19158A81AEC8F4A00A25697 /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
 		E19158A91AEC8F4A00A25697 /* PayPalProfileSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalProfileSharingViewController.h; sourceTree = "<group>"; };
-		E19158AA1AEC8F4A00A25697 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		E19158AB1AEC8F4A00A25697 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = release_notes.md; sourceTree = "<group>"; };
 		E191592C1AEC90AF00A25697 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E191592E1AEC90B900A25697 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E19159301AEC90CB00A25697 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -278,6 +252,28 @@
 				488708D51AEC3E9900AB75A0 /* EstimoteSDK.framework */,
 			);
 			name = EstimoteSDK;
+			sourceTree = "<group>";
+		};
+		488708F71AECA7AC00AB75A0 /* MHFBImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				488708F81AECA7AC00AB75A0 /* MHFacebookImageViewer.h */,
+				488708F91AECA7AC00AB75A0 /* MHFacebookImageViewer.m */,
+				488708FA1AECA7AC00AB75A0 /* Resources */,
+				488708FD1AECA7AC00AB75A0 /* UIImageView+MHFacebookImageViewer.h */,
+				488708FE1AECA7AC00AB75A0 /* UIImageView+MHFacebookImageViewer.m */,
+			);
+			name = MHFBImageViewController;
+			path = LifeCycle/Libraries/MHFacebookImageViewer/MHFBImageViewController;
+			sourceTree = "<group>";
+		};
+		488708FA1AECA7AC00AB75A0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				488708FB1AECA7AC00AB75A0 /* Done.png */,
+				488708FC1AECA7AC00AB75A0 /* Done@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		48C1D8FC1AEBC3BB007006B6 = {
@@ -428,9 +424,10 @@
 		48C1D9621AEBEEFB007006B6 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				E19158861AEC8F4A00A25697 /* PayPal-iOS-SDK */,
 				48C1D9631AEBEF07007006B6 /* AFNetworking */,
 				488708D41AEC3E7000AB75A0 /* EstimoteSDK */,
+				488708F71AECA7AC00AB75A0 /* MHFBImageViewController */,
+				E19158861AEC8F4A00A25697 /* PayPal-iOS-SDK */,
 			);
 			name = Libraries;
 			path = ..;
@@ -500,44 +497,10 @@
 		E19158861AEC8F4A00A25697 /* PayPal-iOS-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				E19158871AEC8F4A00A25697 /* .gitignore */,
-				E19158881AEC8F4A00A25697 /* acknowledgments.md */,
-				E19158891AEC8F4A00A25697 /* docs */,
-				E19158971AEC8F4A00A25697 /* LICENSE.md */,
-				E19158981AEC8F4A00A25697 /* PayPal-iOS-SDK.podspec */,
 				E19158991AEC8F4A00A25697 /* PayPalMobile */,
-				E19158AA1AEC8F4A00A25697 /* README.md */,
-				E19158AB1AEC8F4A00A25697 /* release_notes.md */,
 			);
 			name = "PayPal-iOS-SDK";
 			path = "LifeCycle/Libraries/PayPal-iOS-SDK";
-			sourceTree = "<group>";
-		};
-		E19158891AEC8F4A00A25697 /* docs */ = {
-			isa = PBXGroup;
-			children = (
-				E191588A1AEC8F4A00A25697 /* future_payments_mobile.md */,
-				E191588B1AEC8F4A00A25697 /* future_payments_server.md */,
-				E191588C1AEC8F4A00A25697 /* ja */,
-				E19158931AEC8F4A00A25697 /* profile_sharing_mobile.md */,
-				E19158941AEC8F4A00A25697 /* profile_sharing_server.md */,
-				E19158951AEC8F4A00A25697 /* sdk-screens.png */,
-				E19158961AEC8F4A00A25697 /* single_payment.md */,
-			);
-			path = docs;
-			sourceTree = "<group>";
-		};
-		E191588C1AEC8F4A00A25697 /* ja */ = {
-			isa = PBXGroup;
-			children = (
-				E191588D1AEC8F4A00A25697 /* future_payments_mobile.md */,
-				E191588E1AEC8F4A00A25697 /* future_payments_server.md */,
-				E191588F1AEC8F4A00A25697 /* profile_sharing_mobile.md */,
-				E19158901AEC8F4A00A25697 /* profile_sharing_server.md */,
-				E19158911AEC8F4A00A25697 /* README.md */,
-				E19158921AEC8F4A00A25697 /* single_payment.md */,
-			);
-			path = ja;
 			sourceTree = "<group>";
 		};
 		E19158991AEC8F4A00A25697 /* PayPalMobile */ = {
@@ -645,17 +608,16 @@
 			files = (
 				48C1D9141AEBC3BC007006B6 /* Main.storyboard in Resources */,
 				488708EF1AEC7D7600AB75A0 /* star_empty.png in Resources */,
-				E19158FB1AEC8F4B00A25697 /* PayPal-iOS-SDK.podspec in Resources */,
 				488708F01AEC7D7600AB75A0 /* star_full.png in Resources */,
 				48C1D9A21AEBFD9A007006B6 /* video.mp4 in Resources */,
-				E19158EC1AEC8F4B00A25697 /* .gitignore in Resources */,
 				488708E01AEC4B3400AB75A0 /* estimote_bg.png in Resources */,
 				48C1D9191AEBC3BC007006B6 /* LaunchScreen.xib in Resources */,
 				48C1D9531AEBD751007006B6 /* bike.png in Resources */,
 				48C1D9161AEBC3BC007006B6 /* Images.xcassets in Resources */,
 				488708E91AEC68BC00AB75A0 /* btn_map@2x.png in Resources */,
 				48C1D95F1AEBE9F6007006B6 /* person.png in Resources */,
-				E19158F81AEC8F4B00A25697 /* sdk-screens.png in Resources */,
+				488709001AECA7AC00AB75A0 /* Done.png in Resources */,
+				488709011AECA7AC00AB75A0 /* Done@2x.png in Resources */,
 				488708E81AEC68BC00AB75A0 /* btn_map.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,51 +638,38 @@
 			files = (
 				48C1D97C1AEBEF23007006B6 /* AFSecurityPolicy.m in Sources */,
 				48C1D9491AEBC89B007006B6 /* LCBikeMapViewController.m in Sources */,
-				E19158FE1AEC8F4B00A25697 /* release_notes.md in Sources */,
 				48C1D97B1AEBEF23007006B6 /* AFNetworkReachabilityManager.m in Sources */,
-				E19158F21AEC8F4B00A25697 /* profile_sharing_mobile.md in Sources */,
 				48C1D93E1AEBC6BB007006B6 /* LCUser.m in Sources */,
 				48C1D99D1AEBF7E0007006B6 /* LCLoginViewController.m in Sources */,
 				488708D31AEC264900AB75A0 /* LCRentalViewController.m in Sources */,
 				48C1D9931AEBEF2C007006B6 /* AFNetworkActivityIndicatorManager.m in Sources */,
-				E19158FD1AEC8F4B00A25697 /* README.md in Sources */,
 				48C1D9971AEBEF2C007006B6 /* UIImageView+AFNetworking.m in Sources */,
 				48C1D97D1AEBEF23007006B6 /* AFURLConnectionOperation.m in Sources */,
-				E19158FA1AEC8F4B00A25697 /* LICENSE.md in Sources */,
 				48C1D9941AEBEF2C007006B6 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				E19158F11AEC8F4B00A25697 /* future_payments_server.md in Sources */,
-				E19158EF1AEC8F4B00A25697 /* future_payments_server.md in Sources */,
-				E19158EE1AEC8F4B00A25697 /* future_payments_mobile.md in Sources */,
-				E19158F31AEC8F4B00A25697 /* profile_sharing_server.md in Sources */,
 				48C1D99A1AEBEF2C007006B6 /* UIWebView+AFNetworking.m in Sources */,
-				E19158ED1AEC8F4B00A25697 /* acknowledgments.md in Sources */,
 				48C1D9781AEBEF23007006B6 /* AFHTTPRequestOperation.m in Sources */,
 				48C1D97A1AEBEF23007006B6 /* AFHTTPSessionManager.m in Sources */,
 				48C1D9951AEBEF2C007006B6 /* UIAlertView+AFNetworking.m in Sources */,
 				48C1D97E1AEBEF23007006B6 /* AFURLRequestSerialization.m in Sources */,
 				48C1D93D1AEBC6BB007006B6 /* LCBike.m in Sources */,
-				E19158F41AEC8F4B00A25697 /* README.md in Sources */,
 				488708C01AEC0C5D00AB75A0 /* LCSplashViewController.m in Sources */,
 				48C1D9801AEBEF23007006B6 /* AFURLSessionManager.m in Sources */,
-				E19158F61AEC8F4B00A25697 /* profile_sharing_mobile.md in Sources */,
 				488708CF1AEC143800AB75A0 /* LCStyling.m in Sources */,
 				48C1D90E1AEBC3BC007006B6 /* AppDelegate.m in Sources */,
-				E19158F51AEC8F4B00A25697 /* single_payment.md in Sources */,
 				48C1D9791AEBEF23007006B6 /* AFHTTPRequestOperationManager.m in Sources */,
 				48C1D9981AEBEF2C007006B6 /* UIProgressView+AFNetworking.m in Sources */,
 				48C1D90B1AEBC3BC007006B6 /* main.m in Sources */,
 				48C1D9961AEBEF2C007006B6 /* UIButton+AFNetworking.m in Sources */,
+				488709021AECA7AC00AB75A0 /* UIImageView+MHFacebookImageViewer.m in Sources */,
 				48C1D97F1AEBEF23007006B6 /* AFURLResponseSerialization.m in Sources */,
 				48C1D9561AEBDABC007006B6 /* LCBikePinAnnotation.m in Sources */,
+				488708FF1AECA7AC00AB75A0 /* MHFacebookImageViewer.m in Sources */,
 				488708E31AEC5D8900AB75A0 /* LCProfileViewController.m in Sources */,
-				E19158F01AEC8F4B00A25697 /* future_payments_mobile.md in Sources */,
 				488708EC1AEC695700AB75A0 /* LCBikeLocationViewController.m in Sources */,
 				488708D01AEC143800AB75A0 /* NSString+JSON.m in Sources */,
-				E19158F71AEC8F4B00A25697 /* profile_sharing_server.md in Sources */,
 				48C1D9411AEBC6CA007006B6 /* LCDataManager.m in Sources */,
 				48C1D9991AEBEF2C007006B6 /* UIRefreshControl+AFNetworking.m in Sources */,
 				48C1D9591AEBDB45007006B6 /* LCBikeDetailsViewController.m in Sources */,
-				E19158F91AEC8F4B00A25697 /* single_payment.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

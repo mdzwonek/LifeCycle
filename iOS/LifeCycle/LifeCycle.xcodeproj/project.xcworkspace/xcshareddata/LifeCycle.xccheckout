@@ -28,9 +28,9 @@
 		<key>6CCB585858000804BB16202076224C1AB1B84311</key>
 		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/iOS-SDK/</string>
 		<key>DD20A1A48C66B5213E0FEBB87A95EF51D6C6F3E8</key>
-		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/AFNetworking</string>
+		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/AFNetworking/</string>
 		<key>DEF69B637476FC5A11C1E68BB97C88EC6D295A4E</key>
-		<string>../../../../iOS/LifeCycle/LifeCycle/Libraries/PayPal-iOS-SDK/</string>
+		<string>../../../..iOS/LifeCycle/LifeCycle/Libraries/PayPal-iOS-SDK/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mdzwonek/LifeCycle.git</string>

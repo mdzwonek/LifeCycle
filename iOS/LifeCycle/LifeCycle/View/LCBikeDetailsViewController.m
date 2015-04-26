@@ -15,9 +15,21 @@
 #import "LCRentalViewController.h"
 #import "LCStyling.h"
 #import "UIImageView+AFNetworking.h"
+#import "UIImageView+MHFacebookImageViewer.h"
 
 
-@interface LCBikeDetailsViewController () <ESTNearableManagerDelegate, MKMapViewDelegate>
+@interface LCBikePictureCell : UICollectionViewCell
+@property (nonatomic) IBOutlet UIImageView *pictureImageView;
+
+@end
+
+
+@implementation LCBikePictureCell
+
+@end
+
+
+@interface LCBikeDetailsViewController () <ESTNearableManagerDelegate, MKMapViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic) IBOutlet UIImageView *profileImageView;
@@ -120,6 +132,20 @@
         pinView.image = [UIImage imageNamed:@"bike"];
     }
     return pinView;
+}
+
+
+#pragma mark - UICollectionViewDataSource
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return _bike.pictures.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    LCBikePictureCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    [cell.pictureImageView setImageWithURL:[NSURL URLWithString:_bike.pictures[indexPath.row]] placeholderImage:[UIImage new]];
+    [cell.pictureImageView setupImageViewer];
+    return cell;
 }
 
 @end

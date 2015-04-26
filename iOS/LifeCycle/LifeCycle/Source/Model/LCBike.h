@@ -17,7 +17,8 @@
 @property (nonatomic) NSString *nearableIdentifier;
 @property (nonatomic) BOOL rented;
 @property (nonatomic) NSString *code;
+@property (nonatomic) NSArray *pictures;
 
-- (instancetype)initWithID:(NSNumber *)bikeID location:(CLLocation *)location owner:(LCUser *)owner rented:(BOOL)rented code:(NSString *)code;
+- (instancetype)initWithID:(NSNumber *)bikeID location:(CLLocation *)location owner:(LCUser *)owner rented:(BOOL)rented code:(NSString *)code pictures:(NSArray *)pictures;
 
 @end
