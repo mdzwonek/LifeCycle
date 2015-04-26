@@ -3,7 +3,11 @@ var router = express.Router();
 
 var path = require('path');
 var pg = require('pg');
+var superagent = require('superagent');
 var connectionString = require(path.join(__dirname, '../', 'config'));
+/* Copyright 2013 PayPal */
+"use strict";
+var paypal_api = require('paypal-rest-sdk');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -234,6 +238,47 @@ router.post('/return_bike', function(req, res) {
     query.on('row', function(row) {
       results.push(row);
     });
+
+    var config_opts = {
+      'host': 'api.sandbox.paypal.com',
+      'port': '',
+      'client_id': 'Afp2yAdLXxHG6EYv1TDHaH9jsA7X-L2y3k5tblbXFvFM0evlPcxssqpVj8XJUaCJxbQDjcN7MG_J4wT-',
+      'client_secret': 'EAZr787qN6AX0GfqR8lpkFh7-YwTR4c37q_-nLeQ0il9rjdMN4uw1mZtdtiZ25oQ3izvhLep42jObd33'
+    };
+
+
+    var create_payment_json = {
+      "intent": "sale",
+      "payer": {
+        "payment_method": "paypal"
+      },
+      "redirect_urls": {
+        "return_url": "http:\/\/localhost\/test\/rest\/rest-api-sdk-php\/sample\/payments\/ExecutePayment.php?success=true",
+        "cancel_url": "http:\/\/localhost\/test\/rest\/rest-api-sdk-php\/sample\/payments\/ExecutePayment.php?success=false"
+      },
+      "transactions": [{
+        "amount": {
+          "currency": "USD",
+          "total": "1.00"
+        },
+        "description": "This is the payment descriptionx."
+      }]
+    };
+
+
+    paypal_api.payment.create(create_payment_json, config_opts, function (err, res) {
+      if (err) {
+        throw err;
+      }
+
+      if (res) {
+        console.log("Create Payment Response");
+        console.log(res);
+      }
+
+//      paypal_api.payment.
+    });
+
 
     // After all data is returned, close connection and return results
     query.on('end', function() {
