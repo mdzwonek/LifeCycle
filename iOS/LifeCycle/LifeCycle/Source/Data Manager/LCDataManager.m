@@ -70,6 +70,9 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
         [userDefaults setObject:profileImageURL forKey:ProfileImageURLKey];
         [userDefaults synchronize];
         completion();
+        
+        UIUserNotificationType types = UIUserNotificationTypeBadge | UIUserNotificationTypeSound | UIUserNotificationTypeAlert;
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:types categories:nil]];
     }];
 }
 

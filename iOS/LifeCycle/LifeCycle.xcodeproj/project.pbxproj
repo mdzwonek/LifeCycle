@@ -575,6 +575,7 @@
 				TargetAttributes = {
 					48C1D9041AEBC3BB007006B6 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = BE6NAXXLXT;
 					};
 					48C1D91D1AEBC3BC007006B6 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -803,6 +804,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LifeCycle/Libraries/iOS-SDK/EstimoteSDK",
@@ -822,6 +824,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LifeCycle/Libraries/iOS-SDK/EstimoteSDK",

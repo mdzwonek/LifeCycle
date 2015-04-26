@@ -56,5 +56,17 @@ app.use(function(err, req, res, next) {
   });
 });
 
+var apn = require('apn');
+
+var apnConnection = new apn.Connection({});
+
+var myDevice = new apn.Device("0b33d559 7ddadf54 d359462c 6ad7e8fa 4afd3e52 decafdf4 ca9aa9fb 73ddbea8");
+
+var note = new apn.Notification();
+note.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
+note.sound = "ping.aiff";
+note.alert = "Hello world!";
+
+apnConnection.pushNotification(note, myDevice);
 
 module.exports = app;
