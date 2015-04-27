@@ -32,7 +32,7 @@ static NSString *const BikeDetailsSegueIdentifier = @"bike-details-segue";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _mapView.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(51.508286, -0.059427), MKCoordinateSpanMake(0.025, 0.025));
+    _mapView.region = MKCoordinateRegionMake(CLLocationCoordinate2DMake(51.508286, -0.059427), MKCoordinateSpanMake(0.04, 0.04));
     
     self.locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;

@@ -20,6 +20,7 @@
 @property (nonatomic) IBOutlet UIView *playerContainerView;
 @property (nonatomic) IBOutlet UIView *gradientView;
 @property (nonatomic) IBOutlet UIButton *loginButton;
+@property (nonatomic) IBOutlet UIButton *loginButton2;
 
 @property (nonatomic) ACAccountStore *accountStore;
 @property (nonatomic) MPMoviePlayerController *playerController;
@@ -49,6 +50,7 @@
     [_playerController play];
     
     _loginButton.layer.cornerRadius = 5.0f;
+    _loginButton2.layer.cornerRadius = 5.0f;
 }
 
 - (IBAction)didTapLoginButton:(id)sender {

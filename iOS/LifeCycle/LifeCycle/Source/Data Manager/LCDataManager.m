@@ -13,7 +13,7 @@
 #import "AFNetworking.h"
 
 
-static NSString *const UserIdKey = @"userId-12";
+static NSString *const UserIdKey = @"userId-19";
 static NSString *const UserFullNameKey = @"userFullName";
 static NSString *const ProfileImageURLKey = @"profileImageURL";
 
@@ -144,7 +144,7 @@ static NSString * const HTTP_CONTENT_JSON = @"application/json";
 }
 
 - (NSURLRequest *)prepareRequest:(NSString *)path withData:(NSDictionary *)data {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://localhost:3000/%@", path]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://10.205.252.102:3000/%@", path]];
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
     urlRequest.timeoutInterval = 30;
     
